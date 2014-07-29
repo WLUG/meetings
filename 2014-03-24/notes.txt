@@ -1,0 +1,61 @@
+Outline:
+
+Overview of Android, with reference to my diagram
+
+Generate a developer key.
+
+Create a project with
+    android create project \
+        --activity <main-class-name also main-activity-title-name> \
+        --name <apk-file-name> \
+        --target <api-version-subdir-name> \
+        --package <parent-package-name> \
+        --path <projdir>
+
+examine directory structure, point out src/ directory clutter
+
+Delete and recreate default project with my new-android-project script
+<https://github.com/ldo/new-android-project> (note: need to set up local.properties
+and keystore.properties files like those on my system):
+
+    new-android-project \
+        --api-level=<version-or-integer-or-codename> \
+        --main-class=<fully-qualified-main-class-name> \
+        --main-title=<main-activity-title-name> \
+        --project-name=<apk-file-name> \
+        --custombuild [--ndk] \
+        --noproguard [--nobuildprops] \
+        <projdir>
+
+Do “adb start-server” before connecting device.
+
+Build, install and run as is.
+
+Introduce AndroidManifest.xml, app versus activity distinction.
+
+Demonstrate logcat. Perhaps debug a crash.
+
+Show off resource selection for portrait/landscape and different-sized screens.
+Perhaps use my version of screeninfo app <https://github.com/ldo/screeninfo_android>.
+
+Importance of layout system, e.g. <https://github.com/ldo/unicode_browser_android>
+for alternative layouts. Mention styles, e.g. Unicode Browser and also
+<https://github.com/ldo/screencalc_android>.
+
+Further things I could mention:
+  * Versions of Android APIs, build version (project.properties) versus
+    manifest target/min versions
+  * permissions model and use of UIDs
+  * UI conventions & vendor customization
+    Version differences: menu & search buttons vs action bar
+  * Intents
+  * launcher icons vs shortcuts <https://github.com/ldo/ShortcutCircus_Android>
+  * emulator?
+  * OpenGL-ES
+  * AOSP & alternative ROMs
+
+---
+Useful links:
+API reference <http://developer.android.com/reference/packages.html>
+Resource selection <http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources>
+Permissions <http://developer.android.com/reference/android/Manifest.permission.html>
