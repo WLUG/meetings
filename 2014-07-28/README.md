@@ -21,7 +21,6 @@ authentication.
 The presenter will talk about lastpass.com and apache authentication.
 
 
-References
-----------
+References:
 
-# https://www.yubico.com/products/yubikey-hardware/yubikey/
+[1] https://www.yubico.com/products/yubikey-hardware/yubikey/
