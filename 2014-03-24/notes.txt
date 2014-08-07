@@ -1,4 +1,4 @@
-Outline:
+Presentation by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
 
 Overview of Android, with reference to my diagram
 
