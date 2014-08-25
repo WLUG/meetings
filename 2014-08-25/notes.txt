@@ -61,3 +61,7 @@ samples
     maybe end with a Blender Foundation movie. Or a Caminandes one?
         Sintel: mocap, hair
         Tears Of Steel: match-move and green-screening
+
+Useful links:
+    My videos on Vimeo: <https://vimeo.com/user17229068/videos>
+    “Blender 3D: Noob to Pro” wikibook: <https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro>
