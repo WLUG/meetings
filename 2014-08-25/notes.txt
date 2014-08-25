@@ -1,0 +1,63 @@
+Presentation by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
+
+Ensure key-mon is installed to let audience see my clicks & keystrokes
+Change modifier key for System Settings→Window Behavior→Window Actions from Alt to Meta.
+
+What to cover:
+
+    Blender covers every major area of 3D production work: modelling, sculpting,
+    animation, rendering, physical modelling, even compositing and video editing.
+UI intro
+    windowing system--needs to run full-screen
+    different kinds of windows, window headers, editor-selection menu, window layouts
+    just briefly mention scenes: like multiple documents-within-a-document
+    left-click (place current point) versus middle-click (adjust view) versus right-click (select things)
+    introduce 3D view
+        middle-mouse and shift-middle-mouse to change view
+    introduce Properties window
+        show how object-specific properties change depending on selection
+    briefly mention other windows in Default layout: outliner, timeline
+    Blender UI is designed to minimize interruptions to workflow (avoid popups)
+        object→action→settings, e.g. “Quick Fur” effect applied to default cube
+    object mode vs edit mode on default cube
+    some keyboard shortcuts: A, G, S, R
+    introduce Cartesian coordinate systems
+    G/S/R axis constraints
+    Blender uses local vs global coords, choice of G/S/R axis constraints,
+        transformation in object vs edit modes
+features intro
+    modelling a simple goblet from hex prism:
+        create prism as cylinder, set sides to 6 (action→settings)
+        explanation about edge loops and loop cuts
+            (note loop doesn’t continue past poles on end faces)
+        symmetrical scaling (just one of the ways to produce a radially-symmetrical model)
+        add subsurf modifier (explain about modifiers),
+        demonstrate curvature control with loop spacing
+        also smooth shading versus cranking up the subsurf levels
+    demonstrate BI materials, diffuse vs specular, metal vs plastic
+    add some surround (e.g. floor + array of plain cubes) for reflection/refraction
+    first render: note rear side is inky black: add environment lighting, second light
+    ray-tracing refraction & reflection
+    give background cubes array an emissive material, show how this doesn’t
+        illuminate non-raytraced goblet in BI
+    switch to Cycles render, note how this loses almost all material settings
+    demonstrate Cycles materials nodes
+    have time for some physical modelling? Smoke and flames might be enough
+    basic animation? (might not have time) (but Peter’s meeting blurb promised animations!)
+        concept of key frames
+        animating properties vs animating transforms in 3D view
+Python scripting
+    Blender has a DOM
+    show interactively adjusting transformation of default cube
+samples
+    take some .blend files of mine, show corresponding rendered videos from Vimeo:
+        Spy Ring Game Board (low-poly example, BI example)
+        Abdul Jalil House (point out “reversed shadows” next to carport pillars)
+            need a copy of .blend file with mesh fence hidden for faster opening?
+            Or just show slow opening as example of what you have to deal with in 3D
+        UFO Moonbase Control Sphere
+        UFO Moonbase exterior
+        Futuro House
+    maybe end with a Blender Foundation movie. Or a Caminandes one?
+        Sintel: mocap, hair
+        Tears Of Steel: match-move and green-screening
