@@ -32,6 +32,10 @@ Installation
 
   http://yourip/owncloud
 
+* install desktop client (Linux/Max/Windows)
+
+  http://owncloud.org/install/
+
 
 Optional
 --------
