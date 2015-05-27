@@ -1,0 +1,31 @@
+Example of basic Git usage, including creating a branch, introducing a toy merge
+conflict and how to fix it up:
+
+Init new Git repo, commit new file test.py, contents from test.py-01
+
+Go into python3 and do “import test”, discover syntax errors. Change test.py
+by applying test.py-02.diff (adding the missing colons), but don’t commit yet.
+On successful import, python3 creates __pycache__ subdirectory, which we don’t
+want in repo but which Git will keep pestering us about. So add a .gitignore,
+contents from gitignore.txt. Commit that.
+
+Now come back to updated test.py, and commit fixes to syntax errors in that.
+
+Create branch side-branch (“git checkout -b side-branch”, make change
+test.py-03-side-branch.diff, which moves a function to a different place.
+
+Back to master branch, make change test.py-03-master.diff, which renames
+a function.
+
+Now try merging side-branch onto master, will fail with merge conflict.
+
+“git status” will report conflict, test.py will contain “<<<<<<< HEAD ... =======
+>>>>>>> side-branch” section to be sorted out by hand.
+
+“git log --merge” will show commit entries related to merge conflict.
+
+“git diff --merge” will show 3-way diff between the state of the source file
+in the staging area, and the versions from the parent branches.
+
+Fix up conflict, do “git add test.py”, check again with “git diff --merge”, then
+“git commit” to complete the merge.

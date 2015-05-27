@@ -1,0 +1,175 @@
+Notes for talk on version control and Git, Monday 25th May 2015
+by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
+
+What is version control?
+* A record of the state of your source tree at various points in time.
+* We’ve all started out by making a backup copy of our program source
+  at significant points (e.g. copy “myprog.py” to “myprog_v1.py” or
+  “myprog_2014-12-01.py”) before making new changes. This gets unwieldy
+  with too many copies, or too many source files in the project.
+
+Why version control?
+* Keep track of history of changes (“commits”) to code on a fine-grained level,
+  not just on version updates, e.g.
+    - fixed this bug (reference to bug report number X)
+    - improved performance in this routine
+    - refactor these related bits of code
+    - add this extra option
+  all as individual commits.
+  “Commit early and often.”
+* If some change introduces a bug that wasn’t there before (“regression”),
+  it is possible to step back through the changes, rebuilding from earlier
+  versions of the source, to find the one that introduced the bug.
+* If committing changes is easy and quick to do, then you will do it more,
+  e.g. make 10 or 100 commits per day, whatever makes sense
+  for grouping the related changes that you have done.
+* Version control should not be a chore--it is something you do to ''increase''
+  your productivity, not take time away from it. Making backup copies of files
+  is a chore.
+* You can use the commit history since the last version to generate a changelog
+  summarizing what’s new in the next version.
+* Encourages you to experiment, take risks. If an idea doesn’t work, you can
+  just roll back your source tree to the previous commit.
+* Collaboration between multiple people working on the same project, allowing
+  them to keep track of each other’s changes. But it should be clear from the
+  previous points that version control is still useful for a single developer.
+
+The beginnings of version control:
+* Centralized server. Each programmer “checks out” the current state of the source
+  tree from the repository, makes their changes, and “checks in” an updated source
+  tree as a new commit for others to see.
+* Each commit records changes to one file only (e.g. CVS)
+* File locking! If two people made changes to the same file, the world would end!
+  So only one programmer at a time can check out a particular file read/write; others
+  can only have read-only copies.
+* Only people who are officially part of the project have commit access to the server.
+  Others can send them patches (just the changes they made, not entire changed source files).
+
+Aside: the patch(1) command
+* diff(1) and patch(1) are crucial components of collaborative software development.
+  They are both very old (from the early days of version control), but they are
+  still just as important today.
+* diff(1) can output a “unified diff” showing just the parts of a file that have
+  changed (relative to another, previous version of the file), surrounded by a few
+  lines of “context” (unchanged lines). patch(1) can parse this
+  unified diff and, given a copy of the previous version of the file, convert
+  it to the changed version.
+* But patch(1) can also work on a file that has had ''other changes applied to it''
+  (provided these do not conflict with the parts mentioned in this diff). This is
+  because it doesn’t have to go by strict line numbers,  patch can match against
+  the context lines as well to find the location to apply the patch. This is how
+  you merge changes to the same source file from two or more contributors.
+
+Subversion: “CVS done right” (cue sardonic laughter from Linus Torvalds)
+* Radical idea: no need for file locking! Different people modifying the same file
+  is uncommon, and can be sorted out on a case-by-case basis.
+* Each commit can atomically record changes to multiple files, e.g. “moved function
+  X from file A to file B” or “refactored related code in files A, B and C”.
+* However: if someone else commits a change in-between your checking out the source
+  tree and trying to check in your changes, the server will detect this (will not
+  allow accidental overwriting of previous changes) and your check-in will fail. You
+  will need to save your changes somewhere, check out a fresh source tree, and then
+  merge in your changes again somehow, and repeat the check-in attempt.
+* Branching: it is handy to be able to work on different versions of the source tree
+  concurrently. E.g.
+    - “stable” branch (last stable release); only changes allowed are bugfixes
+    - “next version” branch (not guaranteed stable yet); approved new features go
+      here for further testing
+    - various feature branches for developing new ideas before acceptance into
+      “next version”
+  However: while Subversion makes it easy to ''create'' branches (docs go on about
+  “cheap copies”, which means there is minimal extra storage overhead in the repository
+  for branching unchanged files), it is not so easy to ''merge'' them back again.
+* Committing is quite slow
+
+The modern era: distributed version control
+* Further radical idea: get rid of the central server. Instead, each programmer gets
+  their own complete copy of the repository, with the entire commit history.
+  But won’t this increase storage overhead? In practice, with modern storage capacities, no.
+  E.g. (my personal experience) Blender, >1 million lines of source, commit history
+  going back over a decade (first recorded commit: 12th October 2002), averaging maybe
+  a dozen commits a day from ~100 active developers (currently over 59,000 commits), commit
+  history is half gig, source tree is ~135MB.
+* This actually makes it easier for the lone programmer working on their own project,
+  since the repo structure can conveniently live in a subdirectory of the source tree
+  (e.g. “.git” or “.hg”), no separate server setup or other fiddly configuration required.
+* So how do you publish commits? There are several different workflows possible,
+  and you can often use any number of them at once.
+    - have a hierarchy of programmer repositories: each programmer submits their
+      changes for acceptance into the repository of their respective team leader,
+      and so on upwards to an “official” repo (e.g. Linus Torvalds’ repo for the Linux
+      kernel)
+    - but even with such a policy in place, it is easy for different programmers to
+      bypass the hierarchy and directly send each other patches. Thus, you don’t
+      have to wait for changes to bubble up to a common part of the hierarchy
+      before they can bubble down to programmers in another group.
+    - you can still have a central server (e.g. GitHub). This can be an addition
+      to the other ways of working, not an either/or requirement.
+
+The basics of Git
+* Git is the most popular DVCS, probably the most popular VCS, distributed or otherwise.
+* Has a reputation for being hard to use. Inconsistent terminology in the docs (and
+  some idiosyncratic arrangement of command functionality) doesn’t help. But it is
+  a lot easier than in the early days.
+* You need to understand the basic concepts making up a Git repo, in order to make
+  any sense of it:
+    - blob (contents of a file, no other info--no filename or anything)
+    - tree (state of a source tree, consisting of references to blobs and associated file
+      pathnames and file mode info). Note this does not represent directories as such,
+      so for example you cannot represent an empty directory in a Git repo--the directory
+      is created automatically as soon as you put files in it. Empty directories are
+      not automatically deleted.
+    - commit: references a source tree (the state of things as a result of the commit)
+      and 0 or more “parent” commits; has a timestamp and a commit message.
+    - branch: this has a name, and points to a ''single'' commit (the “head” or “tip” of
+      the branch). The rest of the branch history is inferred by following the chain(s)
+      of parent references from this head commit.
+    - HEAD -- a special reference that normally points to a branch, indicating you
+      are currently “on” that branch. The source tree is (at least initially) a copy
+      of the head commit on that branch. If you make changes and commit those changes,
+      they will be added as a new head commit on that branch, with the previous head
+      as its parent.
+    - all object references are SHA-1 hashes of their contents. This is key to the
+      distributed nature of Git. So e.g. if you get exactly the same commit via two
+      different channels, they will have SHA-1 hash and will fit into your copy of
+      the repo the same as everybody else’s repo.
+    - tag: this has a name and points to a commit, like a branch. However, once
+      defined, it typically does not move. So it identifies commits that are significant
+      in some way (e.g. “v1.0”). Tags can also be digitally signed.
+    - the “index” or “cache” or “staging area” (see what I said about inconsistent
+      terminology?). Git does not automatically commit all changes you have made to
+      the source tree: you have to explicitly “add” changed files to the staging area,
+      and it is the contents of this area that go on to make up the commit.
+      Why is this useful? It lets you make several sets of unrelated changes in a
+      single work session, then go through and cherry-pick them for each commit,
+      so only related changes are committed together.
+* You will come across the term “Directed Acyclic Graph” (“DAG”). This means that
+  a commit cannot directly or indirectly point back to itself as an ancestor. All
+  commit-parent chains will terminate after a finite number of steps.
+* Typically, there will only be ''one'' commit with no parents: the first commit made
+  to the repo. The second one will have the first one as its parent, and so on.
+* How can a commit have more than one parent? This usually denotes a ''merge'' of two
+  or more branches down into one.
+* Ease of merging is the “secret weapon” which is why Git has become so much more popular
+  than its rivals.
+    - Git does not have complicated, elaborate algorithms to try to automatically handle
+      merge conflicts! (Linus Torvalds has said he wouldn’t trust these anyway.)
+      That’s is why the synopsis in the man page says “git - the stupid content tracker”.
+    - When you get a merge conflict, Git has tools that help you narrow down just the
+      set of commits that are directly implicated in the conflict, rather than showing
+      you entire histories of irrelevant commits. Rather than replacing human judgement,
+      it tries to aid it with quality, rather than quantity, of information.
+    - You can merge from a branch, continue further parallel development along that branch,
+      and then merge from it again. Git can trace back the ancestry, discover the previous
+      merge point, and just process changes from that point on, ignoring the history
+      previous to the last merge (which has already been processed).
+* Commits have no sequence numbers, only SHA-1 IDs. If you are used to Subversion,
+  where “svn status” tells you the commit number (which might not be the most recent
+  commit), Git has no equivalent; “git status” tells you which branch you are on, and
+  only the differences (if any) between your working tree and the branch head, not
+  which older commit the tree might correspond to.
+
+References:
+* ESR “Understanding Version-Control Systems”: good intro, last time I looked at it
+  (few years ago) <http://www.catb.org/esr/writings/version-control/version-control.html>
+* Git home page: <http://git-scm.com/>

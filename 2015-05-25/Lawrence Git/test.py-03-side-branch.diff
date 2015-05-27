@@ -1,0 +1,29 @@
+commit 31b835841201a31b77247e21b8890bf6566a07f5
+Author: Lawrence D'Oliveiro <ldo@debian>
+Date:   Mon May 25 08:47:26 2015 +0000
+
+    swap couple of functions around
+
+diff --git a/test.py b/test.py
+index 6162a9a..c8393ed 100644
+--- a/test.py
++++ b/test.py
+@@ -7,14 +7,14 @@ def func_common() :
+     pass
+ #end func_common
+ 
+-def child1() :
+-    func_common()
+-#end child1
+-
+ def child2() :
+     func_common()
+ #end child2
+ 
++def child1() :
++    func_common()
++#end child1
++
+ def some_other_func() :
+     pass
+ #end some_other_func

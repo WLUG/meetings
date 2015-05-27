@@ -1,0 +1,31 @@
+commit b461a97613444622ec8fbd48d5315b3148e8d321
+Author: Lawrence D'Oliveiro <ldo@debian>
+Date:   Mon May 25 08:48:55 2015 +0000
+
+    rename func_common to common
+
+diff --git a/test.py b/test.py
+index 6162a9a..4b306de 100644
+--- a/test.py
++++ b/test.py
+@@ -3,16 +3,16 @@
+ # This code doesn't really do anything at all.
+ #-
+ 
+-def func_common() :
++def common() :
+     pass
+-#end func_common
++#end common
+ 
+ def child1() :
+-    func_common()
++    common()
+ #end child1
+ 
+ def child2() :
+-    func_common()
++    common()
+ #end child2
+ 
+ def some_other_func() :

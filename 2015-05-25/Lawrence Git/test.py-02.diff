@@ -1,0 +1,25 @@
+--- test.py-01	2015-05-24 15:42:20.062823498 +1200
++++ test.py-02	2015-05-27 12:36:07.604185116 +1200
+@@ -3,18 +3,18 @@
+ # This code doesn't really do anything at all.
+ #-
+ 
+-def func_common()
++def func_common() :
+     pass
+ #end func_common
+ 
+-def child1()
++def child1() :
+     func_common()
+ #end child1
+ 
+-def child2()
++def child2() :
+     func_common()
+ #end child2
+ 
+-def some_other_func()
++def some_other_func() :
+     pass
+ #end some_other_func
