@@ -1,0 +1,20 @@
+Create RAID-1 array with one disk partition and one USB stick partition.
+
+Init filesystem and mount volume. Put file on volume. Perhaps compute SHA-256
+hash with sha256sum and store that somewhere as well.
+
+After syncing has finished, pull out USB stick.
+
+Demonstrate file still accessible, by recomputing SHA-256 hash and comparing
+to previous. Could dismount and remount volume, to demonstrate no filesystem
+caching is confusing the issue.
+
+Show state of array.
+
+Reattach USB stick--note detached device does not automatically reattach.
+
+Tell mdadm to remove detached device, then readd same partition to array.
+
+Add second disk partition to array as spare (not really “redundant”, since it’s on
+same physical disk). Pull out USB stick again. Show how spare disk partition
+automatically gets used in its place.
