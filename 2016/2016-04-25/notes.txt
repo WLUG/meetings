@@ -1,0 +1,248 @@
+“How I use Emacs” or “Emacs--A Personal View” by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>
+==============================================================================================
+
+There is a lot to Emacs that I am not familiar with. This is
+just an overview of some parts I have found most useful, that
+help, rather than hinder, my own productivity.
+
+I see Emacs as an editor, not an IDE. An IDE imposes a particular
+build system on you (“Integrated Development”, e.g. Microsoft’s Visual
+Studio, Apple’s XCode), whereas Emacs can work on any project with
+just about any build system--certainly any command-based build system.
+It doesn’t “integrate” development.
+
+Note I said “editor”, not “text editor”. Emacs can be used to
+(directly) edit non-text files!
+
+Most common way I invoke Emacs: I launch one instance, and leave it
+running as long as I am using the machine. Then I use the
+“emacsclient” command (normally as “emacsclient -n”, abbreviated to “e”)
+to tell the running instance to open files I want to work on.
+
+“Emacs” is short for “Editing Macros”. It was created by Richard
+Stallman. The earliest versions were written in a language called TECO
+(“Text Editing and COrrecting”) which was invented at MIT and popular
+on DEC operating systems around the 1960s and 1970s. TECO commands
+were one or two characters (extremely cryptic!), and subroutines were
+called “macros”. Basically it was a language for writing your own text
+editor--considered quite advanced for the time, but not really
+groundbreaking today (e.g. no regular expressions that I recall).
+
+Later, Emacs was rewritten with a core of C code wrapped around with a
+thick layer of Elisp, its own custom dialect of Lisp. The only
+vestiges of that TECO origin that I can spot are it still uses CTRL/G
+to mean “cancel the current interactive operation”, and the word
+“yank” to mean bringing in a block of text from somewhere (though
+slightly different from the TECO meaning that I remember).
+
+Built-In Help
+-------------
+
+Even though Emacs nowadays has a GUI, it is still heavily keystroke-
+oriented. It has some menus and dialogs, but they only give you
+access to a tiny subset of the available functionality. And you
+can still run it without a GUI.
+
+Trouble is, there aren’t enough keys on any practical keyboard to
+assign one to every editing function (even after co-opting keys like
+CTRL/C, CTRL/Q and CTRL/S for editing functions!). So Emacs makes
+heavy use of modifier keys. And even that is not enough, so it also
+has multiple-key sequences.
+
+Names of modifier keys: names like “meta” and “super” go back
+to long before your IBM/Microsoft compatibles introduced “alt”
+and “Windows” keys. See picture of “space-cadet” keyboard
+(enclosed).
+
+Joys of CTRL/H:
+C-h ? -- give summary of all key sequences that begin with C-h
+C-h a -- “apropos” (command keyword search). Need to know the right
+         keyword! E.g. I was looking for line-wrapping settings
+         (autowrap column etc), then discovered the correct keyword to
+         use was “fill”!
+C-h b -- list all current key bindings. There’s a lot of them.
+         Luckily, the output is put into a regular Emacs buffer,
+         so you can use the usual Emacs commands to move and
+         search through the list.
+C-h c -- give help for following keystroke
+C-h f -- give help for Elisp function
+C-h F -- give help for Emacs command (requires separate
+         “emacs24-common-non-dfsg” package installed on Debian)
+C-h w -- “where” -- show key binding (if any) for given command
+
+Note the distinction between “Emacs commands” and “Elisp functions”.
+
+You don’t need a key sequence to invoke a command: type ALT-X,
+and it prompts you for the command name, then for any arguments
+needed by the command. Command name is an Elisp function with
+the special “(interactive ...)” construct at the start, which
+defines what arguments it needs.
+
+Keystroke Macro Example
+-----------------------
+
+This is a facility I have used frequently: you can define
+a sequence of keystrokes as a “macro” to perform some
+repetitive operation on a piece of text.
+
+Example: take enclosed words.txt file, and reformat from
+
+    word1
+    word2
+    word3
+    ...
+
+to C array
+
+    char * words[] =
+        {
+            "word1",
+            "word2",
+            "word3",
+            ...
+        };
+
+Elisp Intro
+-----------
+
+Emacs can be customized by writing Elisp code. Large parts of
+Emacs itself are written in Elisp. You can directly type and
+execute Elisp snippets into the “*scratch*” buffer that Emacs
+opens by default when you start it up.
+
+Syntax of Lisp consists of “atoms” (words, number and string literals)
+and “lists” (anything in parentheses). First word after an
+opening parenthesis is interpreted as either
+  1. The name of a function to be called, or
+  2. A special syntactic form (e.g. assignment, function definition)
+
+The rest of the items before the corresponding closing parenthesis
+are arguments to the function or syntactic form.
+
+Example:
+
+    (setq a 2)
+    (setq b 3)
+
+These assignment statements return the value assigned.
+
+    a
+    b
+
+These print out the values of the variables.
+
+    (a)
+
+Raises error, no such function
+
+    (+ a b)
+
+prints out the value 5.
+
+    (setq a (+ a b))
+
+assigns the value 5 to a.
+
+The underlying variable-assignment operator is actually “set” rather
+than “setq”; “setq” is a convenience for common case where destination
+is given by a literal variable name:
+
+    (set 'a 2)
+
+or
+
+    (set (quote a) 2)
+
+are both equivalent to
+
+    (setq a 2)
+
+Lisp has never been a massively-popular language. I can think of
+two reasons why:
+  * It is seen as esoteric, and hard for “ordinary” people to
+    understand.
+  * It was never properly standardized. There are any number of
+    subtly-incompatible implementations floating around. Unlike
+    Perl or Python, where a single common reference implementation
+    is dominant, allowing writers of scripts and library modules
+    to come together around it and freely reuse each other’s work.
+
+Example of lack of standardization: in more traditional Lisps,
+variable names and function names are in separate namespaces
+(Elisp follows this). Whereas in Scheme, the two are put in a
+single namespace.
+
+For example, define a function called “a”:
+
+    (defun a ()
+        (message "hello")
+    )
+
+Now the expression
+
+    (a)
+
+works and displays the string “hello” in the status area (and
+returns it as the function result), while
+
+    a
+
+still returns the value of the variable “a”.
+
+“defun” is a convenience, can use “fset” (analogous to “set”)
+to assign to the “function cell” of the symbol. Value of this
+cell can be returned (without necessarily calling it) using
+“symbol-function”, similarly “symbol-value” returns the contents
+of the value cell.
+
+    (symbol-function 'a)
+
+returns
+
+    (lambda nil (message "hello"))
+
+while
+
+    (symbol-value 'a)
+
+returns
+
+    5
+
+If you want to call a variable value as a function, use “funcall”.
+Function-valued expressions can be called directly, funcall is
+only needed where the function is the value of a variable.
+
+Emacs has the concept of “modes”, where its behaviour changes
+depending on the type of file (programming language syntax) you
+are editing. I have all this disabled. Instead, I have some
+very basic editing smarts enabled:
+  * Auto-indent
+  * Insertion of spaces when tab key is pressed (depending on the file)
+
+Auto-indent means pressing Enter inserts same whitespace at start of
+line as at start of previous line. Alt-enter just inserts newline
+without whitespace.
+
+Behaviour of tab key defaults to whether file already contains tabs
+or not. This allows me to remain compatible with source file conventions
+that use tabs, without my having to consciously worry about it.
+
+Even without a lot of Elisp programming, it is possible to customize
+behaviour of Emacs commands. For example, page-up and page-down go
+up and down a screenful. But what happens when they would try to go
+past the beginning or end of the file? That depends on whether
+the buffer variable “scroll-error-top-bottom” has a non-nil value
+or not; if it does, then the cursor will move to the beginning or
+end of the file; otherwise, Emacs will beep without moving the cursor.
+
+Tour Through My Dotemacs
+------------------------
+
+Latest version of this file available here <https://github.com/ldo/emacs-prefs>.
+
+Perhaps talk about my various functions for managing indentation.
+
+Emacs defines CTRL/C as a standard prefix key, but doesn’t predefine
+any sequences beginning with this key. It is reserved for users to
+define their own custom key sequences.

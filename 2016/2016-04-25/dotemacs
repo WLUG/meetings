@@ -1,0 +1,542 @@
+(custom-set-variables
+    ;; custom-set-variables was added by Custom -- don't edit or cut/paste it!
+    ;; Your init file should contain only one such instance.
+    '(enable-local-variables nil)
+    '(enable-local-eval nil)
+    '(auto-compression-mode t nil (jka-compr))
+    '(auto-mode-alist (quote (("" . fundamental-mode))) t)
+    '(case-fold-search t)
+    '(current-language-environment "UTF-8")
+    '(default-input-method "rfc1345")
+    '(default-tab-width 4 t)
+    '(global-font-lock-mode t nil (font-lock))
+    '(interpreter-mode-alist nil t)
+    '(pc-select-meta-moves-sexps t)
+    '(pc-select-selection-keys-only t)
+;   '(pc-selection-mode t t)
+    '(save-place t nil (saveplace))
+    '(show-trailing-whitespace t)
+    '(indicate-empty-lines t)
+    '(make-backup-files nil)
+    '(show-paren-mode t nil (paren))
+    '(scroll-error-top-bottom t)
+    '(tool-bar-mode nil)
+    '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 88 96 104 112 120)))
+    '(transient-mark-mode t)
+    '(delete-selection-mode t)
+)
+(custom-set-faces
+    ;; custom-set-faces was added by Custom -- don't edit or cut/paste it!
+    ;; Your init file should contain only one such instance.
+ )
+
+;+
+; End Emacs-generated stuff, begin my stuff
+;-
+
+(when (display-graphic-p)
+     (when (x-list-fonts "Hack-10")
+        ; (set-default-font "Hack") ; doesn't work
+        (add-to-list ; this works
+            'default-frame-alist
+            '(font . "Hack-10") ; get from <http://sourcefoundry.org/hack/>
+        )
+    ) ; when
+) ; when
+
+(put 'narrow-to-region 'disabled nil)
+(setq initial-frame-alist '((top . 1) (left . 520) (width . 100) (height . 60)))
+(set-face-attribute 'default nil :family "fixed")
+(server-start)
+(setq inhibit-startup-message t)
+(setq initial-scratch-message
+    (purecopy "; Scratch buffer -- list evaluation\n\n")
+)
+
+(global-unset-key [?\C-t]) ; keep hitting it accidentally
+
+(when (fboundp 'next-logical-line)
+    (global-set-key [down] 'next-logical-line)
+    (global-set-key [up] 'previous-logical-line)
+    (global-set-key (kbd "M-<down>") 'next-line)
+    (global-set-key (kbd "M-<up>") 'previous-line)
+) ; when
+
+; MPW-style shortcuts (?\s- is Windows key)
+(global-set-key [?\s-o] 'find-file) ; open...
+(global-set-key [?\s-w]
+    (lambda ()
+        "closes the current buffer."
+        (interactive)
+        (kill-buffer (current-buffer))
+    ) ; lambda
+)
+(global-set-key [?\s-s] 'save-buffer) ; save
+(global-set-key [?\s-S] 'write-file) ; save as...
+; (global-set-key [?\s-q] 'save-buffers-kill-emacs) ; quit ; forget it--keep hitting it accidentally
+(global-set-key [?\s-z] 'undo)
+
+(global-set-key [menu] 'tmm-menubar)
+
+(defun revert ()
+    "revert current buffer without confirmation."
+    (interactive)
+    (revert-buffer t t)
+) ; revert
+
+(global-set-key [?\C-c ?d]
+    (lambda ()
+        "inserts current date in canonical format."
+        (interactive)
+        (insert (shell-command-to-string "date +\"%Y %B %-d\""))
+        (delete-char -1) ; get rid of newline
+    ) ; lambda
+)
+
+(global-set-key [?\C-c ?l]
+    (lambda ()
+        "inserts my standard identification string."
+        (interactive)
+        (insert "Lawrence D'Oliveiro <ldo@geek-central.gen.nz>")
+    ) ; lambda
+)
+
+(global-set-key [?\C-c ?\ ] 'isearch-toggle-lax-whitespace)
+
+;+
+; Indentation control
+;-
+
+(global-set-key "\t" 'tab-to-tab-stop)
+(defun auto_indent ()
+    "auto-indent the way I like it."
+    (interactive)
+    (let ((previndent (current-indentation)))
+        (newline)
+        (delete-horizontal-space)
+        (indent-to previndent)
+    ) ; let
+) ; auto_indent
+
+(defun set_auto_indent (&optional on)
+    "lets user change auto-indent setting."
+    (interactive)
+    (when (eq on nil)
+        (setq on
+            (y-or-n-p
+                (format
+                    "Auto-indent [%s]? "
+                    (if
+                        (eq
+                            (lookup-key (current-global-map) "\015")
+                            'auto_indent
+                        )
+                        "y"
+                        "n"
+                    ) ; if
+                )
+            )
+        ) ; setq
+    ) ; when
+    (cond
+        (on
+            (global-set-key "\015" 'auto_indent)
+            (global-set-key [?\C-\M-m] 'newline)
+            (message "Auto-indent on")
+        )
+        (t
+            (global-set-key "\015" 'newline)
+            (global-set-key [?\C-\M-m] 'auto_indent)
+            (message "Auto-indent off")
+        )
+    ) ; cond
+) ; set_auto_indent
+
+(set_auto_indent t) ; only possible default
+(when (functionp 'electric-indent-mode)
+    (electric-indent-mode -1) ; disable new behaviour in Emacs 24 that interferes with my code
+) ; when
+
+(global-set-key [?\s-]]
+    (lambda (beg end)
+        "indent selected range by 4 columns without losing selection."
+        (interactive "*r")
+        (let*
+            (
+                deactivate-mark
+                (point_marker (point-marker))
+            )
+            (indent-rigidly beg end 4)
+            (goto-char (marker-position point_marker))
+        ) ; let*
+    ) ; lambda
+)
+
+(global-set-key [?\s-[]
+    (lambda (beg end)
+        "unindent selected range by 4 columns without losing selection."
+        (interactive "*r")
+        (let*
+            (
+                deactivate-mark
+                (point_marker (point-marker))
+            )
+            (indent-rigidly beg end -4)
+            (goto-char (marker-position point_marker))
+        ) ; let*
+    ) ; lambda
+)
+
+(global-set-key [?\C-c ?t]
+    (lambda ()
+        "toggle tab expansion for current buffer."
+        (interactive)
+        (cond
+            (indent-tabs-mode
+                (setq indent-tabs-mode nil)
+                (message "tabs will be expanded to spaces")
+            )
+            (t
+                (setq indent-tabs-mode t)
+                (message "tabs will not be expanded to spaces")
+            )
+        ) ; cond
+    ) ; lambda
+)
+
+(add-hook 'find-file-hook
+    (lambda ()
+        "sets tab expansion depending on whether the current buffer contains tabs."
+        (save-excursion
+            ; check text within the region of point; if tabs are found, then
+            ; indent with tabs, else indent with spaces
+            (let
+                (
+                    (checkamt 2048) ; how much text to check
+                )
+                (when (<= (point-max) (+ (point) checkamt))
+                    (goto-char
+                        (cond
+                            ((>= (point-max) checkamt)
+                                (- (point-max) checkamt)
+                            )
+                            (t
+                                (point-min)
+                            )
+                        ) ; cond
+                    ) ; goto-char
+                ) ; when
+                (setq indent-tabs-mode (search-forward "\t" (+ (point) checkamt) t))
+            ) ; let
+        ) ; save-excursion
+    ) ; lambda
+) ; add-hook
+
+(global-set-key [?\C-c ?a]
+    (lambda (beg end)
+        "indents selected range to same level as first line without losing selection."
+        (interactive "*r")
+        (let
+            (
+                deactivate-mark
+                (point_marker (point-marker))
+            )
+            (goto-char beg)
+            (indent-region beg end (current-indentation))
+            (goto-char (marker-position point_marker))
+        ) ; let
+    ) ; lambda
+)
+
+(global-set-key [?\s-\ ]
+    (lambda ()
+        (interactive)
+        (let ((prev-buffer-size (buffer-size)))
+            (delete-trailing-whitespace)
+            (cond
+                ((/= prev-buffer-size (buffer-size))
+                    (message "trailing whitespace deleted")
+                )
+                (t
+                    (message "no trailing whitespace found")
+                )
+            ) ; cond
+        ) ; let
+    ) ; lambda
+)
+
+(global-set-key [?\C-c ?m]
+    (lambda ()
+        "selects the whole of the current message (from previous formfeed up to before next formfeed) in a mail collection file"
+        (interactive)
+        (deactivate-mark)
+        (search-backward "\f" nil 1)
+        (set-mark (point))
+        (cond
+            ((search-forward "\f" nil 1 2)
+                (backward-char)
+            )
+        ) ; cond
+    ) ; lambda
+)
+
+;+
+; Command buffers
+;-
+
+(defun cur-line (ensure-newline)
+    "returns list of two character positions, representing the beginning and end of the selection if there is one, else the beginning and end of the current line. ensure-newline => ensures there is a newline at the end of the line."
+    (let (beg end)
+        (cond
+            (mark-active
+                (setq beg (min (point) (mark)))
+                (setq end (max (point) (mark)))
+            )
+            (t
+                (save-excursion
+                    (setq beg (search-backward "\n" nil t))
+                    (cond
+                        (beg
+                            (setq beg (+ beg 1))
+                        )
+                        (t
+                            (setq beg (point-min))
+                        )
+                    ) ; cond
+                    (goto-char beg)
+                    (search-forward "\n" nil 1)
+                    (setq end (point))
+                ) ; save-excursion
+            )
+        ) ; cond
+        (when ensure-newline
+            (deactivate-mark)
+            (goto-char end)
+            (unless (eq (char-before) 10)
+                (insert "\n")
+                (setq end (point))
+            ) ; unless
+        ) ; when
+        (list beg end)
+    ) ; let
+) ; defun cur-line
+
+(defmacro get-cur-line (ensure-newline beg end)
+    "calls (cur-line ensure-newline) and assigns the two components of the result to beg and end."
+    (let
+        (
+            (tempvar (make-symbol "temp"))
+        )
+        `(let
+            (
+                (,tempvar (cur-line ,ensure-newline))
+            )
+            (setq ,beg (car ,tempvar))
+            (setq ,end (cadr ,tempvar))
+        ) ; let
+    ) ; let
+) ; defmacro get-cur-line
+
+(defun make-command-buffer (cmd name)
+    "creates a command buffer with the specified name, executing the specified cmd on selected text when ctrl-j is hit."
+    (interactive "sCmd: \nsBuffer name: ")
+    (let
+        (
+            (thebuffer (generate-new-buffer name))
+            (thekeymap (make-sparse-keymap))
+        )
+        (switch-to-buffer thebuffer)
+        (make-local-variable 'buffer-command)
+        (setq buffer-command (split-string cmd))
+        (use-local-map thekeymap)
+        (define-key
+            thekeymap
+            [?\C-j]
+            (lambda ()
+                (interactive)
+                (let (beg end)
+                    (get-cur-line t beg end)
+                    (eval
+                        `(call-process-region beg end (car buffer-command) nil t ,@buffer-command)
+                    )
+                ) ; let
+            ) ; lambda
+        ) ; define-key
+        (insert "# press ctrl-j to execute \"")
+        (insert cmd)
+        (insert "\" on selected text.\n\n")
+    ) ; let
+) ; defun make-command-buffer
+
+(defun make-shell-buffer (name)
+    "creates a process buffer with the specified name, for a process executing a shell, which is fed selected text as input when ctrl-j is hit."
+    (interactive "sBuffer name: ")
+    (let
+        (
+            (thebuffer (generate-new-buffer name))
+            (thekeymap (make-sparse-keymap))
+            (shell (getenv "SHELL"))
+        )
+        (cond
+            ((eq shell nil)
+                (setq shell "/bin/bash")
+            )
+        ) ; cond
+        (switch-to-buffer thebuffer)
+        (make-local-variable 'buffer-process)
+        (setq buffer-process
+            (start-process name thebuffer shell)
+        )
+        (use-local-map thekeymap)
+        (define-key
+            thekeymap
+            [?\C-j] ; send selected data to process
+            (lambda ()
+                (interactive)
+                (let (beg end)
+                    (get-cur-line t beg end)
+                    (set-marker (process-mark buffer-process) end)
+                    (process-send-region buffer-process beg end)
+                ) ; let
+            ) ; lambda
+        ) ; define-key
+        (define-key
+            thekeymap
+            [?\s-O] ; open filename represented by current selection
+            (lambda ()
+                (interactive)
+                (let (selbeg selend path colon1pos colon2pos line-nr)
+                    (get-cur-line nil selbeg selend)
+                    (setq path (buffer-substring selbeg selend))
+                    (setq colon1pos (string-match ":" path))
+                    (when colon1pos
+                        (when (string-match ":[0-9]+:" path)
+                            (setq colon2pos (match-end 0))
+                            (setq line-nr
+                                (string-to-number
+                                    (substring path (+ colon1pos 1) colon2pos)
+                                )
+                            ) ; setq
+                        ) ; when
+                        (setq path
+                            (substring path 0 colon1pos)
+                        ) ; setq
+                    ) ; when
+                    (unless (file-name-absolute-p path)
+                        (setq path
+                            (concat
+                                (file-truename
+                                    (concat
+                                        "/proc/"
+                                        (format "%s" (process-id buffer-process))
+                                        "/cwd"
+                                    ) ; concat
+                                ); file-truname
+                                "/"
+                                path
+                            ) ; concat
+                        ) ; setq
+                    ) ; unless
+                    (find-file path)
+                    (when line-nr
+                        (goto-line line-nr)
+                    ) ; when
+                ) ; let
+            ) ; lambda
+        ) ; define-key
+        (insert "# press ctrl-j to feed selected text to shell.\n\n")
+    ) ; let
+) ; defun make-shell-buffer
+
+;+
+; Search/replace, MPW-style
+;-
+
+(defvar last_search_string "" "last-used search string")
+
+(defun search_next (fwd)
+    "searches for next/previous occurrence of last_search_string."
+    (let ((startpos))
+        (unless (equal last_search_string "")
+            (cond
+                (mark-active
+                    (setq startpos
+                        (cond
+                            (fwd
+                                (max (point) (mark))
+                            )
+                            (t
+                                (min (point) (mark))
+                            )
+                        ) ; cond
+                    )
+                )
+                (t
+                    (setq startpos (point))
+                )
+            ) ; cond
+            (deactivate-mark)
+            (goto-char startpos) ; so I don't match current selection
+            (cond
+                (fwd
+                    (when (search-forward last_search_string)
+                        (set-mark (match-beginning 0))
+                    ) ; when
+                )
+                (t
+                    (when (search-backward last_search_string)
+                        (set-mark (match-end 0))
+                    ) ; when
+                )
+            ) ; cond
+        ) ; unless
+    ) ; let
+) ; search_next
+
+(global-set-key [?\s-h]
+    ; search forward for next occurrence of current selection
+    (lambda (selbegin selend)
+        (interactive "r")
+        (cond
+            (mark-active
+                (setq last_search_string (buffer-substring selbegin selend))
+                (search_next t)
+            )
+            (t
+                (ding)
+            )
+        ) ; cond
+    ) ; lambda
+)
+
+(global-set-key [?\s-H]
+    ; search backward for next occurrence of current selection
+    (lambda (selbegin selend)
+        (interactive "r")
+        (cond
+            (mark-active
+                (setq last_search_string (buffer-substring selbegin selend))
+                (search_next nil)
+            )
+            (t
+                (ding)
+            )
+        ) ; cond
+    ) ; lambda
+)
+
+(global-set-key [?\s-g]
+    ; search forward for next occurrence of last_search_string
+    (lambda ()
+        (interactive)
+        (search_next t)
+    ) ; lambda
+)
+
+(global-set-key [?\s-G]
+    ; search backward for next occurrence of last_search_string
+    (lambda ()
+        (interactive)
+        (search_next nil)
+    ) ; lambda
+)
