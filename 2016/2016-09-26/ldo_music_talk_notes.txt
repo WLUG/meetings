@@ -1,0 +1,22 @@
+Brief intro to making music/audio
+
+Introduce JACK, explain that MIDI is just control signals, not sound
+(very old standard, from 1980s, 16-channel limit, but never been
+supplanted by anything more advanced).
+
+Start JACK. Show connections window, explain the 3 tabs, 2 different
+kinds of MIDI (“ALSA” vs “MIDI”--latter is JACK-native).
+
+Show QJackCtl setup with my pajackconnect script to interoperate
+with PulseAudio. Mention a2jmidid to offer compatibility between the
+2 kinds of MIDI APIs.
+
+Show simple connection between keyboard and sound source (e.g. QSynth/FluidSynth).
+Show my Korg with USB-MIDI adapter.
+
+Mention “General MIDI”, which is a minimal instrument set and default
+channel layout (drum kit on channel 10) to allow some predictability
+in being able to interchange simple MIDI files.
+
+Load the Gershwin Prelude Number 2 into Rosegarden; show it in Notation
+and Matrix editors; connect to FluidSynth and play some of it.

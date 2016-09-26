@@ -1,0 +1,19 @@
+15-minute Blender intro
+
+Blender covers all the major areas of computer graphics production:
+modelling, rendering, animation, physical simulation, compositing, even
+video editing. Also has a game engine. Plus of course Python scriptability
+integrated throughout. And now the Grease Pencil has become more than
+just a tool for making proofing marks, it is also a drawing and animation
+tool now.
+
+Use my “Raumschiff Orion” .blend file to show off simple camera
+animation. Then use it to show off drawing in 3D with grease pencil,
+including pressure sensitivity and animation (just a couple of frames
+at different times).
+
+Also show off sculpt mode with dyntopo.
+
+Finish with Lucas’ assignment <https://www.youtube.com/watch?v=HRrORUqmBIs>?
+
+where to find more info--links? blender.org, basically
