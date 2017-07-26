@@ -1,0 +1,50 @@
+Useful tips about the command line:
+
+When du is asked to give usage summary for a directory followed
+by its parent directory, it automatically excludes the usage of
+the former from the latter, e.g.
+
+    du .git/ ./
+
+to show usage summary for a Git repo and for the current source
+tree excluding that repo.
+
+This feature can be used to get usage summaries for all subdirectories
+in a source tree, each one excluding its child directories. Step by
+step example, constructing a command to get usage for subdirectories of “.”:
+
+* List all subdirectories, which children ordered before parents:
+
+    du .
+
+* Drop the usage figures, just keeping the directory names, using “cut”:
+
+    du . | cut -f2
+
+* Feed the above back to du, including the “-s” option to avoid
+  traversing child directories again (since these are already
+  explicitly specified in the command), and adding whatever options
+  you want (in this case “-h” to show human-readable usage numbers):
+
+    du -hs $(du . | cut -f2)
+
+Script using rsync that I wrote to synchronize source-code projects
+from my main machine to my laptop, including only project directories
+that I have explicitly created on the laptop:
+
+    dir=projects
+    host=theon
+    IFS=$'\n'
+    cd ~/$dir
+    # first matching rule applies, so put explicit includes before wildcard exclude
+    rsync --archive --delete --verbose \
+        $(for d in */; do echo --include="/$d"; done) --exclude=/\* \
+        $host:$dir/ ./
+
+Note how the for-loop dynamically generates a “--include=«dir»”
+directive for each project directory. The “--exclude” directive
+following this then leaves out everything not mentioned.
+
+Originally this did a separate rsync for each project directory, which
+was slow when there was little to copy. By combining all the rsync
+invocations into one, it goes a lot faster now.
