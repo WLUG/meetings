@@ -1,0 +1,51 @@
+In systemd, the system logs can be examined with the “journalctl”
+command. Instead of trying to remember which syslog log file will
+likely contain the messages you are after (auth.log? daemon.log?), you
+just have to figure out the match criteria for the messages you want
+to see, such as the “unit name” for the relevant service.
+
+The basic command for displaying the names of logfile fields is
+
+    journalctl -N
+
+or, to see them in a nicer order,
+
+    journalctl -N | sort
+
+(Unfortunately, this option might not be available in older versions
+of systemd.)
+
+One useful field name is “_SYSTEMD_UNIT”, the value of which identifies
+the particular service. To see all values for this field that occur
+in the logs, use
+
+    journalctl -F _SYSTEMD_UNIT
+
+or, sorting as before
+
+    journalctl -F _SYSTEMD_UNIT | sort
+
+Previously, to look for messages (on Debian, at least) to do with mail
+delivery, you would look in /var/log/mail.log. With systemd, instead,
+you have to remember the service name for the specific MTA you have
+installed (or recognize it from the above “journalctl -F” listing).
+For example, if you are running Postfix, then the messages from this
+can be seen with
+
+    journalctl _SYSTEMD_UNIT=postfix@-.service
+
+(Yes, you have to remember to type that “@-” part.)
+
+On current versions of Debian, both syslog and systemd logging
+continue to be enabled simultaneously, so you can continue to use old
+syslog-specific techniques for examining log messages. In fact, the
+systemd journal is set by default to only be saved to a RAM disk, not
+persistent storage--only the syslog logs are saved persistently. This
+can be easily changed, of course.
+
+One nice improvement in journald over syslog is that timestamps are
+now recorded in UTC, rather than local time. This means you can
+display the log message timestamps in whatever local timezone you
+wish. It always seemed a bit of an anachronism that there is (nearly)
+no concept of a “system timezone” in Linux (and nor should there be),
+except for odd exceptions like syslog.
