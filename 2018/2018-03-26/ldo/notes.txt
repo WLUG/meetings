@@ -1,0 +1,104 @@
+rsync is basically a tool for answering the following question:
+
+ * given a source directory S and a destination directory D, what is the minimum
+   set of changes (file/directory additions/modifications/deletions) that needs
+   to be done to the contents of D to make it an exact mirror of the contents
+   of S?
+
+The clever part of rsync is working out how to modify a file within D to make it an
+exact copy of a file within S, where the two are on different machines, *without*
+having to transfer the entire contents of either file onto the other side.
+Details are in Andrew Tridgell’s PhD thesis from 1998 <https://rsync.samba.org/tech_report/>.
+
+Ironically, this is probably one feature of rsync I use the least. Mainly
+I use it to backup directories where lots of files have been added, or sometimes
+moved or deleted.
+
+Most common form of argument line that I use:
+
+    rsync --archive --delete --verbose «source-host»:«dir»/ «dest-host»:«dir»/
+
+to exactly mirror directory «dir» from machine «source-host» onto «dest-host».
+“--verbose” option says to show lots of detail (can also use “--progress”).
+
+“--archive” is short for
+    -d preserve device files and special files (probably unnecessary for my uses)
+    -g preserve group
+    -l copy symlinks as symlinks
+    -o preserve owner
+    -p preserve permissions
+    -r recursive
+    -t preserve modification times
+but (according to docs) excluding
+    -A preserve ACLs and permissions
+    -H preserve hard links
+    -X preserve extended attributes
+
+I don’t usually use hard links, ACLs, or extended attributes, so this
+is sufficient for now.
+
+Important to remember to put trailing slashes, at least on source directory:
+
+    rsync «src-dir» «dst-dir»
+
+is equivalent to
+
+    rsync «src-dir»/ «dst-dir»/$(basename «src-dir»)
+
+so I normally take care to write
+
+    rsync «src-dir»/ «dst-dir»/
+
+(the trailing slash on the destination directory is harmless).
+
+“--delete” says to delete files from destination that don’t exist on source.
+rsync has a safety feature where it turns off any --delete option if errors
+occur. Can be substituted with “--delete-after” -- don’t do any deletions until
+all additions and modifications have completed successfully, but that takes more
+space. Or, if you’re feeling lucky, “--delete-before”, which does all the deletions
+first before the other changes.
+
+rsync is great for transferring a large amount of data, particularly over
+a network, because if anything fails part-way (e.g. power failure, or the
+network link goes down), you can just re-execute the same command after
+things come back up again, and it will automatically resume from where it
+left off. And then just to be safe, at the end of the transfer, re-run the
+same command anyway, and confirm that it reports nothing to do.
+
+For extra paranoia, add the “--checksum” option. Normally rsync does a
+quick check on source and destination file lengths and modification times;
+if these match exactly, it assumes they are identical. Specifying --checksum
+forces it to do a full check of the file contents.
+
+rsync is also extremely useful as the basis for a backup system. Personally I don’t
+like backup systems that use any kind of special archive format, because
+when it comes time to restore from them, you will likely be in a high-stress
+situation where mistakes can be very costly. Then you have to remember what
+special tool to use to do the restore, and how to use it. What if it’s not
+installed? Better if the backups are just in
+the form of directories of regular files, then you can just use the usual
+file-manipulation commands that you use every day (including rsync) to
+do the restore.
+
+One common need in backup systems is to do incremental versus full backups.
+rsync can deal with this nicely, via its --link-dest option.
+
+backup on day 1:
+    rsync --archive --delete-after \
+        «main-machine»:«important-dir»/ \
+        «day-1-backup»/
+
+backup on day 2:
+    rsync --archive --delete-after \
+        «main-machine»:«important-dir»/ \
+        --link-dest=«day-1-backup»/
+        «day-2-backup»/
+
+which means that any files in «day-1-backup» that have not been changed
+are hard-linked into «day-2-backup» instead of being copied again. This
+saves both bandwidth and disk space, and also means «day-2-backup» looks
+just like a full backup, even though it was actually produced incrementally.
+
+In fact, there are a lot of backup apps that are little more than
+GUI layers on top of rsync. I have written my own custom-purpose
+backup scripts on top of rsync.

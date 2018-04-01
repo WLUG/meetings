@@ -1,0 +1,104 @@
+A discussion of the usefulness (or not) of SMART diagnostics on hard
+drives came up in the talk, so it is worth writing up some notes about
+the discussion.
+
+In my view, SMART is a waste of time. To see why, you have to look at
+some numbers.
+
+A couple of large-scale studies of hard-drive failures were done some
+years ago. One thing I remember from those studies was that SMART only
+predicted about 35% of failures.
+
+Let us say that the odds of a hard drive failing in any one year are
+6%. (This figure is close to that seen in real-world experience.)
+
+One figure that wasn’t given in those studies (that I noticed, anyway)
+was the proportion of *non*-disk-failures predicted by SMART: that is,
+for what proportion of disks that didn’t fail did SMART predict they
+would continue to work fine? Let us be optimistic and say this figure
+is 95%. Given its poor performance predicting failures, I suspect that
+reality is rather lower.
+
+Now we set up a table of probabilities:
+
+                            SMART says:
+                    disk is good     disk will fail
+Actually:        +----------------+-----------------+
+disk survives    |     Pgg        |      Pbg        |
+the year         |                |                 |
+                 +----------------+-----------------+
+disk fails       |     Pgb        |      Pbb        |
+                 |                |                 |
+                 +----------------+-----------------+
+
+Summing the rows, based on known disk failure rates:
+
+    Pgg + Pbg = 0.94
+    Pgb + Pbb = 0.06
+
+Based on the measured SMART numbers for disk failures:
+
+    Pbb ÷ (Pbb + Pgb) = 0.35
+
+And our guesstimated ones for good disks:
+
+    Pgg ÷ (Pgg + Pbg) = 0.95
+
+But in total we must have
+
+    Pgg + Pbg + Pgb + Pbb = 1.0 = 100%
+
+An approximate solution to these equations, to the nearest percentage
+point, is
+
+    Pgg = 90%
+    Pbg = 4%
+    Pgb = 4%
+    Pbb = 2%
+
+Substituting these back into the table:
+
+                            SMART says:
+                    disk is good     disk will fail
+Actually:        +----------------+-----------------+
+disk survives    |     90%        |       4%        |
+the year         |                |                 |
+                 +----------------+-----------------+
+disk fails       |      4%        |       2%        |
+                 |                |                 |
+                 +----------------+-----------------+
+
+Now, we assume you have a system in place for coping with hard-drive
+failures. That means RAID to maintain uptime, or a hot backup, or a
+fault-tolerant filesystem, something like that. That means the actual
+failure does not cause any immediate problems for you, the system can
+keep right on running for now, giving you some reasonable time to
+replace the failed drive. But you still incur a cost from
+doing that replacement.
+
+So, without SMART, in any one year, you end up replacing the disks
+that are grouped into the two cells in the bottom row of the table --
+this is 6% of disks.
+
+If you start relying on SMART, then you will *also* end up replacing
+the disks that fall into the upper right cell -- this means an
+additional 4% of your disks, for a total of 10% of disks each year.
+The only benefit is that you replace the disks in the bottom right
+cell (the ones that SMART said were going to fail, and would actually
+fail) *before* they fail. You still have to deal with those 4% in the
+bottom left that catch you by surprise when they die.
+
+So you still have to deal with a high proportion of unpredicted
+failures, while replacing far more disks than you would have before.
+Do the extra disk replacements make any improvement to your data
+integrity? Almost certainly not to any measurable extent. But they do
+add to your costs.
+
+If the ability of SMART to predict that disks will *not* fail were
+better than 95%, say 99%, then this would increase Pgg and
+correspondingly shrink Pbg (remember, they have to add up to 94%), and
+reduce the number of spurious disk replacements. But I seriously doubt
+it can be this good. If it were lower than 95% (which seems more
+likely), then this leads to an even larger value for Pbg.
+
+And this is why SMART is a waste of time.
