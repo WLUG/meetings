@@ -22,25 +22,25 @@ The seven included Draw documents demonstrate aspects of this type of animation.
 
 ## Description of each Draw demonstration 
 
-###demo 1 - circles 500 - show limitation.odg
+### demo 1 - circles 500 - show limitation.odg
 
 The five provided layers for a Draw page are access via the LayerManager using the index 0 to 4. When adding layers the first layer has an index of 5. Either manually or under program control a layer may be added and onto that layer an object, for example a circle shape, is placed. Under program control it appears that thousands of layers may be added and on each layer a shape is placed. However in reality only 250 layers may be added and have shapes inserted. The 250th layer added has an index of 254. After this, attempting to insert objects into additional layers results in the object being added to the layer with the index of 255. This layer 255 appears to operate in parallel with layer 0.
 
 This first demo program demonstrates the issues when exceeding adding of 250 layers. This program is unstable, and it is difficult to predict the results you experience. The objective is to reinforce the idea that you limit the addition of layers to a maximum of 250.
 
 
-###demo 2 - circles 250.odg
+### demo 2 - circles 250.odg
 
 This Draw page has circles randomly placed onto 250 layers. These layers are from the index value of 5 through to 254. This demo is stable and should run with predictable results.
 
 
-###demo 3 - 27 circles.odg
+### demo 3 - 27 circles.odg
 
 A total of 27 layers are created with the index values ranging from 5 to 31. On each layer a circle shape object is placed. As each circle is added to a layer it is located further to the right on the page. When the layer are displayed in sequence, then the circle appears to move from left to right acros the page.
 
 Options are provided to demonstrate the equivalent of various frame rates per second.
 
-###demo 4 - 100 circles.odg
+### demo 4 - 100 circles.odg
 
 The animation in Demo 3 is rather jerky to the eye. In this demonstration the number of layers / circles is increased to 100. This provides a smoother animation of the circle progressing from left to right across the page.
 
@@ -48,11 +48,11 @@ The animation in Demo 3 is rather jerky to the eye. In this demonstration the nu
 
 This draw document contains 200 added layers. This time the circles are placed on the layers in a spiral sequence. The animation show the circle rotating in a circles as it spirals outwards.
 
-###demo 6 - wheel - 30 degrees - continuous.odg
+### demo 6 - wheel - 30 degrees - continuous.odg
 
 The image of a wheel with spokes is displayed on each layer. The image is rotated by 3 degrees between images. The wheel has a red dot on it. The wheel, when you look at the spokes, appears to rotate in full circles clockwise, however when you look at the red dot it only moves from 0 to 30 degrees using ten images on ten layers, and then repeats itself.
 
-###demo 7 - wheel - 360 degrees.odg
+### demo 7 - wheel - 360 degrees.odg
 
 A total of 120 images of the wheel are added to 120 layers. In sequence each image has the wheel rotated 3 degrees. In displaying the 120 layers in sequence the red dot on the wheel is observed to rotate in a full circle.
 
@@ -64,7 +64,7 @@ Edit the BASIC program to vary the frames to be displayed and you will observe d
 
 Note: This Draw document is 20MB in size due to the 120 images of the wheel. 
 
-##Summary
+## Summary
 
 Draw is unsuitable for high quality animation, however you may find it suitable for teaching the concepts of  animation.
 
@@ -72,7 +72,4 @@ Draw is unsuitable for high quality animation, however you may find it suitable 
 Presented at Waikato Linux User Group meeting on 21 January 2019.
 
 Presenter: Ian Stewart
-
-
-
 
