@@ -44,7 +44,7 @@ Options are provided to demonstrate the equivalent of various frame rates per se
 
 The animation in Demo 3 is rather jerky to the eye. In this demonstration the number of layers / circles is increased to 100. This provides a smoother animation of the circle progressing from left to right across the page.
 
-###demo 5 - 200 circles spiral.odg
+### demo 5 - 200 circles spiral.odg
 
 This draw document contains 200 added layers. This time the circles are placed on the layers in a spiral sequence. The animation show the circle rotating in a circles as it spirals outwards.
 
