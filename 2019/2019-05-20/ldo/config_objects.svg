@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg6" width="600pt" height="400pt" version="1.1" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata id="metadata1">
+  <rdf:RDF>
+   <cc:Work rdf:About="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Nagios Configuration Objects</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title4">Nagios Configuration Objects</title>
+ <path id="path1008" d="m475.26 135.04v51.557" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <text id="text817" x="294.04468" y="75.026291" fill="#000000" font-family="'Linux Libertine O'" font-size="36px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan815" x="294.04468" y="75.026291" font-family="'Linux Libertine O'" font-size="36px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Nagios Configuration Objects</tspan></text>
+ <g id="g919" transform="translate(-.39947 -5.8248)">
+  <rect id="rect924" x="181.84" y="121.96" width="60" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text928" x="210.92789" y="141.50465" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan926" x="210.92789" y="141.50465" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Host</tspan></text>
+ </g>
+ <path id="path903" d="m190.46 145.64-73.933 50.552" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <g id="g924" transform="translate(-115.12 7.3876)">
+  <rect id="rect898" x="181.84" y="168.2" width="73.841" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text902" x="218.88203" y="187.74799" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan900" x="218.88203" y="187.74799" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Service</tspan></text>
+ </g>
+ <g id="g929" transform="translate(-116.59 7.3876)">
+  <rect id="rect904" x="172.5" y="226.33" width="89.758" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text908" x="217.08479" y="245.87949" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan906" x="217.08479" y="245.87949" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Command</tspan></text>
+ </g>
+ <g id="g934" transform="translate(-120.99 33.323)">
+  <rect id="rect910" x="181.84" y="268.89" width="65.882" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text914" x="214.79887" y="288.44006" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan912" x="214.79887" y="288.44006" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Plugin</tspan></text>
+ </g>
+ <g id="g942" transform="translate(258.85 -5.8248)">
+  <rect id="rect936" x="181.84" y="121.96" width="60" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text940" x="210.92789" y="141.50465" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan938" x="210.92789" y="141.50465" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Host</tspan></text>
+ </g>
+ <g id="g950" transform="translate(-25.569 7.3876)">
+  <rect id="rect944" x="181.84" y="168.2" width="73.841" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text948" x="218.88203" y="187.74799" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan946" x="218.88203" y="187.74799" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Service</tspan></text>
+ </g>
+ <g id="g958" transform="translate(68.875 7.3876)">
+  <rect id="rect952" x="181.84" y="168.2" width="73.841" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text956" x="218.88203" y="187.74799" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan954" x="218.88203" y="187.74799" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Service</tspan></text>
+ </g>
+ <g id="g966" transform="translate(-12.846 7.3876)">
+  <rect id="rect960" x="172.5" y="226.33" width="89.758" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text964" x="217.08479" y="245.87949" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan962" x="217.08479" y="245.87949" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Command</tspan></text>
+ </g>
+ <path id="path1000" d="m208.73 259.38 48.706 55.541" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <g id="g974" transform="translate(61.411 33.323)">
+  <rect id="rect968" x="181.84" y="268.89" width="65.882" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text972" x="214.79887" y="288.44006" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan970" x="214.79887" y="288.44006" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Plugin</tspan></text>
+ </g>
+ <g id="g982" transform="translate(254.96 7.3876)">
+  <rect id="rect976" x="181.84" y="168.2" width="73.841" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text980" x="218.88203" y="187.74799" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan978" x="218.88203" y="187.74799" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Service</tspan></text>
+ </g>
+ <g id="g990" transform="translate(168.34 7.3876)">
+  <rect id="rect984" x="172.5" y="226.33" width="89.758" height="31.824" color="#000000" fill="#b9da87" fill-rule="evenodd"/>
+  <text id="text988" x="217.08479" y="245.87949" fill="#000000" font-family="'Linux Libertine O'" font-size="18px" letter-spacing="0px" stroke-width=".75px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:18.75px" xml:space="preserve"><tspan id="tspan986" x="217.08479" y="245.87949" font-family="'Linux Libertine O'" font-size="18px" stroke-width=".75px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Command</tspan></text>
+ </g>
+ <path id="path992" d="m216.69 140.6-23.417 44.79" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path994" d="m100.96 193.06v44.291" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path996" d="m188.03 197.84 19.031 42.215" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path998" d="m98.028 261.08v44.291" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path1002" d="m362.63 263.01-72.893 45.542" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path1004" d="m310.18 196.98 44.637 43.253" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path1006" d="m471.84 196.7-60.165 42.839" fill="none" stroke="#b9da87" stroke-width="4"/>
+ <path id="path1010" d="m232.3 142.62 41.017 35.431" fill="none" stroke="#b9da87" stroke-width="4"/>
+</svg>

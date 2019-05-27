@@ -1,0 +1,57 @@
+Points to cover:
+
+Overview of Nagios architecture (overview.svg). Basic idea is,
+anything you can put a number to (e.g. disk usage, CPU usage,
+network traffic), Nagios can monitor and let you know if it
+crosses specified thresholds. Note how the web interface is
+quite separate from the Nagios server itself.
+
+All actual measurement is done by plugins. These can be any executable
+commands, the main requirements being understanding some standard
+command-line options and producing output in a specified format.
+
+One special plugin is the NRPE (“Nagios Remote Plugin Environment”)
+client. This knows how to communicate with a remote NRPE server, which
+is also running Nagios-compatible plugins, to relay the information
+back to the main Nagios server. This is how one Nagios server can
+monitor an entire network of machines. This way, most plugins don’t
+need to implement their own remote-monitoring capability; they only
+need to be able to gather info from the local machine, unless perhaps
+they are measuring something to do with the management of the network
+itself.
+
+Configuration of Nagios is done by defining various kinds of “objects”
+(partial list in config_objects.svg, show examples from my demo
+config). Inheriting from templates saves you from specifying every
+property value on every object. The “host” object specifies the
+network address, which can be passed to plugins; the NRPE client knows
+how to use this to communicate with a remote NRPE server.
+
+“Service” objects define metrics to be monitored, and reference
+named “command” objects. These in turn define the actual command line
+to be executed to obtain the metric.
+
+NRPE server configuration uses an entirely different syntax;
+mainly this defines the commands that the client is allowed
+to request to be executed. This is tightly locked down by
+default, unless the “dont_blame_nrpe” parameter is set.
+
+One thing I found is that the Nagios plugin architecture doesn’t make
+provision for any persistent state. That is, as far as I can tell, you
+cannot have a plugin that monitors a counter (e.g. accumulated network
+transfer bytes), and get any help from Nagios in monitoring the rate
+of change of that counter, to get e.g. a bytes-per-second value. So I
+wrote my own Python module that maintains a shared SQLite database for
+this purpose. There are occasional hiccups with the sharing, probably
+because SQLite is not a fully multiuser-capable DBMS.
+
+My Nagios plugins mentioned in this talk are available from
+GitHub <https://github.com/ldo/nagios_plugins> and
+GitLab <https://gitlab.com/ldo/nagios_plugins>.
+
+On Debian and derivatives, the “python3-nagiosplugin” package provides
+a module that eases the job of writing a Nagios plugin in Python. This
+takes care of parsing arguments and generating the output in the right
+format, along with some other details. It is purely a convenience
+module, not part of Nagios itself, and you can write plugins without
+using it.

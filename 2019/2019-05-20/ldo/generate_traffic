@@ -1,0 +1,10 @@
+#!/bin/bash
+#+
+# Generates some disk traffic and network traffic
+# between the host and the Nagios demo VM.
+#-
+set -ev
+for i in $(seq 1 100); do
+    scp -p debian-9.4.0-amd64-netinst.iso 192.168.0.1:./
+    scp 192.168.0.1:debian-9.4.0-amd64-netinst.iso /dev/null
+done
