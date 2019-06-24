@@ -17,7 +17,7 @@ Execute the following command:
 
 ```
 fpm -s dir -n hello-world -t deb -v 0.0.1 \
-      src/hello-world=/usr/bin/hello-world 
+      src/hello-world=/usr/bin/hello-world \
       src/hello-world.msg=/etc/hello-world/hello-world.msg
 ```
 
