@@ -13,7 +13,7 @@
   * [ODP](endeavouros/EndeavourOS.odp)
 
 * *Ian Stewart* delivered a presentation on using the **last** utility to process wtmp
-and btmp files. He also provided a python program that summarized the *last* output data.
+and btmp files. He also provided a python program that summarized the [last](last) output data.
 Refer to the files in the *last* folder
 
   * [Details](last/README.md)
