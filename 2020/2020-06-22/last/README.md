@@ -1,4 +1,4 @@
-# Analysis of **last** output
+# Analysis of output from *last* utility
 
 ## Description
 
@@ -16,6 +16,8 @@ summaries from the btmp data.
 This program makes uses the python module **paramiko** to copy the btmp or wtmp files from a remote server. 
 It is likely that you will need to add the *paramiko* module to your system with the command 
 `$ sudo apt install python3-paramiko` or `$ pip3 install paramiko`.
+
+## Files
 
 The python program is the file:
 
