@@ -26,7 +26,7 @@ The python program is the file:
 The slide show presentation that was delivered is included as the files:
 
 * last presentation.odt
-* last_presentation.pdf
+* last presentation.pdf
 
 An example of the command to run the program and the output for a btmp file is given below.
 
