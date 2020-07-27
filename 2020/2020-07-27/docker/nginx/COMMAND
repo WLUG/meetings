@@ -1,0 +1,2 @@
+docker run -v ${PWD}/html:/usr/share/nginx/html -p 8080:80 -d nginx
+
