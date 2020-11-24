@@ -23,3 +23,8 @@ As part of the presentation a collection of demonstration lisp program files are
 As an appendix to the presentation one slide was added to demonstate how the *apropos* and *apropos-list* functions are helpful in finding the functions that are available. Ian also wrote a program that is helpful in displaying all the symbols that are part of a package. This progam is included as:
 
 * package-symbols.lisp
+
+Lawrence D'Oliverio experimented with Jupyter notebook running LISP code through its “%%script” cell magic. Please launch $ jupyter-notebook and then open the file:
+
+* Script Magic Examples.ipynb
+
