@@ -3,7 +3,8 @@
 ## An Introduction to LISP Using the compilers conforming to Common Lisp of: 
 ## Steel Bank Common Lisp ~ SBCL & CLISP
 
-The presentation is available in .odp or .pdf formats:
+Ian Stewart and Jake Waas delivered the presentation which is is available in .odp or .pdf formats:
+
 * lisp_presentation.odp
 * lisp_presentation.pdf
 
