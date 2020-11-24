@@ -19,3 +19,6 @@ As part of the presentation a collection of demonstration lisp program files are
 * demo_trig.lisp
 * demo_date.lisp
 * demo_file.lisp
+
+As an appendix to the presentation on slide was added to demonstate how the *apropos* function is helpful in finding functions. Ian also wrote a program that is helpful in displaying all the symbols that are part of a package. This progam is included as:
+* package-symbols.lisp
