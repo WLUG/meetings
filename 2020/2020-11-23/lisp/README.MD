@@ -25,11 +25,13 @@ As an appendix to the presentation one slide was added to demonstate how the *ap
 
 * package-symbols.lisp
 
-The last slide of the presentation provides a list of some aspects of LISP that were not covered in the presentation. It is intended that these items will be covered at a future meeting. In the meantime, for those who have decided to explore programming in LISP, it is worthwhile to learn and understand some additional concepts. Jake has written the following three programs to highlight features of these concepts:
+The last slide of the presentation provides a list of some aspects of LISP that were not covered in the presentation. It is intended that these items will be covered at a future meeting. In the meantime, for those who have decided to explore programming in LISP, it is worthwhile to learn and understand some additional concepts. Jake has written the following programs to highlight features of these concepts:
 
 * 0-let-setf-lambda.lisp
 * 1-lists.lisp
 * 2-closures.lisp
+* 3-REPL.lisp
+* 4-saving.lisp
 
 Lawrence D'Oliveiro experimented with Jupyter notebook running LISP code through its “%%script” cell magic. Please launch `$ jupyter-notebook` and then open the file:
 
