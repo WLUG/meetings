@@ -31,7 +31,7 @@ The last slide of the presentation provides a list of some aspects of LISP that 
 * 1-lists.lisp
 * 2-closures.lisp
 
-Lawrence D'Oliveiro experimented with Jupyter notebook running LISP code through its “%%script” cell magic. Please launch $ jupyter-notebook and then open the file:
+Lawrence D'Oliveiro experimented with Jupyter notebook running LISP code through its “%%script” cell magic. Please launch `$ jupyter-notebook` and then open the file:
 
 * Script Magic Examples.ipynb
 
