@@ -28,5 +28,4 @@
         ) ; let
     ) ; do
     (setq n (+ n 1))
-    ;;(read-line)
 ) ; loop
