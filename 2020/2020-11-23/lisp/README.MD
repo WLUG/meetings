@@ -37,3 +37,7 @@ Lawrence D'Oliveiro experimented with Jupyter notebook running LISP code through
 
 * Script Magic Examples.ipynb
 
+Lawrence also provided a lisp program that calculates Pythagorean triples. i.e. All triples of integers (a, b, c) such that a² + b² = c², which means that a
+triangle constructed with the lengths of its sides in such a ratio will have a right angle between the a and b sides.
+
+* pythag-triples.lisp
