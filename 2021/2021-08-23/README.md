@@ -57,3 +57,16 @@ An additional subroutine called "debug" has been added at the bottom of the scri
 The output file will be in the current directory and called "dbg_info.txt".
 	
 ## Calc Example
+
+The Calc example files is:
+
+* calc_embedded_basic_amortization.ods
+
+This is a demonstration of the amortization of a loan. Upon clicking on the "Create" pushbutton a spreadsheet labelled "Amortization" is created. Click the label to view this spreadsheet.
+
+The creation of the spreadsheet included adding three slide controls. The top slide control models the amount of the loan from $10K to $1M. The second slide control models the percentage per annum of interest from 1% to 10%. the third control models the length of the loan in years.
+
+A table shows the mothly repayments and how much is going as interest and how much is going towards the repayment of the principle of the loan.
+
+Also a chart is included to display the monthly amortization.
+
