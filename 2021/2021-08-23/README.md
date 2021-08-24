@@ -98,28 +98,46 @@ The following are the Public Chat and Share logs from the meeting:
 Public Chat from Virtual Meeting:
 
 [19:17] Welcome to <b>WaikatoLinuxUsersGroup</b>!<br /><br />For help on using BigBlueButton see these (short) <a href="https://www.bigbluebutton.org/html5" target="_blank" target="_blank"><u>tutorial videos</u></a>.<br /><br />To join the audio bridge click the phone button.  Use a headset to avoid causing background noise for others.<br /><br />This server is running <a href="https://docs.bigbluebutton.org/" target="_blank"><u>BigBlueButton</u></a>.
+
 [19:22] ian : ok. might log out and back in
+
 [19:50] Peter Reutemann : sorry, only started recording now.
+
 [20:34] Brendon : Thanks, interesting demo
+
 [20:42] Hippie Hacker : https://github.com/ii/drones-day-out
+
 [20:42] Hippie Hacker : https://github.com/ii/drones-day-out/blob/master/6x4-dual-mode.stl
+
 [20:43] Hippie Hacker : Probably the best design we came up with: https://github.com/ii/drones-day-out/blob/master/hex-12.stl
+
 [20:43] Peter Reutemann : The rendering is quite cool!
+
 [20:44] Hippie Hacker : http://openingdesign.com publishes their architecture work using https://www.freecadweb.org to https://github.com/OpeningDesign
+
 [20:47] Hippie Hacker : Apache Foundation Funding : https://projects.propublica.org/nonprofits/organizations/470825376
+
 [20:47] Hippie Hacker : 2019 Total Revenue : $2,583,535USD
+
 [20:49] Angus : Thanks!
+
 [20:51] Peter Reutemann : https://syncthing.net/
-[20:53] Hippie Hacker : Moment or two to : # ii.nz
+
+[20:53] Hippie Hacker : Moment or two to : ii.nz
 iikeyboard
 pii.nz
 iiphone
 iisp
 ii community centers
+
 [20:53] Hippie Hacker : I thought the SHared notes was the agenda
+
 [20:53] Hippie Hacker : Or maybe I can try for another meeting :)
+
 [21:12] Hippie Hacker : https://careers-expo.ii.nz/monitor.html
+
 [21:16] Hippie Hacker : https://github.com/ii/expo-prezzo
+
 [21:22] Hippie Hacker : https://twitter.com/mauilion/status/1421261773311647745
 
 =====
@@ -127,24 +145,41 @@ ii community centers
 Shared
 
 * Driving Open Office
+
 v. cool Visual Basic Automation
 
 * Chart / Calc
+
 * Architectural Document
+
 *  http://openingdesign.com
+
 An (uberly) transparent and open source architectural studio.*
+
 - https://github.com/OpeningDesign
+
 - https://gitlab.com/openingdesign 
+
 Using
+
 - https://www.freecadweb.org
+
 - http://openscad.org/
+
 - https://github.com/ii/drones-day-out
+
 - https://github.com/ii/drones-day-out/blob/master/README.md#drones-day-out
 
+
 * ii.nz
+
 iikeyboard
+
 pii.nz
+
 iiphone
+
 iisp
+
 ii community centers
 
