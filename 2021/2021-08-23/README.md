@@ -80,3 +80,11 @@ A table shows the mothly repayments and how much is going as interest and how mu
 
 Also a chart is included to display the monthly amortization.
 
+
+# Update on activities of the Open Source community in Tauranga.
+
+**Chris the *Hippe Hacker*** as part of his presentation provided the following links:
+
+
+
+
