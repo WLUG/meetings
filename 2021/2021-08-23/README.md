@@ -2,7 +2,7 @@
 
 Due to Covid19 NZ-wide lockdown, this meeting was held on-line using https://bigbluebutton.org/ application on servers provided by the NZ Open Source Society (NZOSS) https://nzoss.nz/
 
-A list of public chat and shared notes is from the meeting is provided at the bottom of this document.
+A list of public chat and shared notes from the meeting is provided at the bottom of this document.
 
 
 * **Ian Stewart** delivered a presentation using BASIC to create and model OpenOffice / LibreOffice documents. He demonstrated BASIC code used in Writer, Draw and Calc documents. Note that in running any of the examples you will need "Enable Macros" for code execution to be performed. E.g. Tools--> Options--> Security --> Macro Security... --> Click on "Medium" 
