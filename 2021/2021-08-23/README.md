@@ -1,6 +1,6 @@
 # 2021-08-23
 
-* **Ian Stewart** delivered a presentation using BASIC to create and model OpenOffice / LibreOffice documents. He demonstrated BASIC code used in Writer, Draw and Calc documents. Note that in running any of the examples you will need to "Enable Macros" to be executed. E.g. Tools--> Options--> Security --> Macro Security... --> Click on "Medium" 
+* **Ian Stewart** delivered a presentation using BASIC to create and model OpenOffice / LibreOffice documents. He demonstrated BASIC code used in Writer, Draw and Calc documents. Note that in running any of the examples you will need "Enable Macros" for code execution to be performed. E.g. Tools--> Options--> Security --> Macro Security... --> Click on "Medium" 
 
 * **Chris the *Hippie Hacker*** provided an update on activities of the Open Source community in Tauranga.
 
@@ -8,7 +8,7 @@
 
 ## Slide show
 
-As an overview to this presentation Ian used the following slide show, which are files in .odp and .pdf formats:
+As an overview to this presentation Ian used the following slide show, which is provided as files in .odp and .pdf formats:
 
 * Embedded Basic Presentation.odp
 * Embedded Basic Presentation.pdf
