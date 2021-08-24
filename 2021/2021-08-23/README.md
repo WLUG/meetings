@@ -2,7 +2,7 @@
 
 * **Ian Stewart** delivered a presentation using BASIC to create and model OpenOffice / LibreOffice documents. He demonstrated BASIC code used in Writer, Draw and Calc documents. Note that in running any of the examples you will need to "Enable Macros" to be executed. E.g. Tools--> Options--> Security --> Macro Security... --> Click on "Medium" 
 
-* **Chris *Hippe Hacker*** provided an update on activities of the Open Source community in Tauranga.
+* **Chris the *Hippie Hacker*** provided an update on activities of the Open Source community in Tauranga.
 
 # Using BASIC to Create and Model OpenOffice / LibreOffice documents 
 
@@ -83,7 +83,7 @@ Also a chart is included to display the monthly amortization.
 
 # Update on activities of the Open Source community in Tauranga.
 
-**Chris the *Hippe Hacker*** as part of his presentation provided the following links:
+**Chris the *Hippie Hacker*** as part of his presentation provided the following links:
 
 
 
