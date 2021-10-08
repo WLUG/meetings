@@ -2,6 +2,8 @@
 
 Due to Covid19 NZ-wide lockdown, this meeting was held on-line using https://bigbluebutton.org/ application on servers provided by the NZ Open Source Society (NZOSS) https://nzoss.nz/
 
+The meeting was recorded and the video may be replayed via: https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=b9e64e4bd74566f13a48d6a5940f3c929982b914-1629703025339
+
 A list of public chat and shared notes from the meeting is provided at the bottom of this document.
 
 
