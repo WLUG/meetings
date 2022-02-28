@@ -1,4 +1,4 @@
-# OpenWRT
+# OpenWrt
 
 OpenWrt is the open-source Linux distribution that enables replacement the propriatary software in many models of modems.
 
