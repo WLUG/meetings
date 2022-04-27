@@ -2,7 +2,7 @@ Recently the Covid restrictions were eased. This allowed us to have our first *r
 after many months of *virtual* meetings using the NZOSS Big Blue Button web-conferencing system. 
 At the same time this meeting was linked to BBB for on-line attendees.
 
-# pfSense on FreeBSD using PC Engine hadware platform.
+# pfSense on FreeBSD using PC Engine hardware platform.
 
 **Rubicon Communications LLC** do business with the trading name of **Netgate**. A major software product they develop is **pfSense®**.
 
