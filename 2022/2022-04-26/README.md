@@ -4,9 +4,9 @@ At the same time this meeting was linked to BBB for on-line attendees.
 
 # pfSense on FreeBSD using PC Engine hadware platform.
 
-Rubicon Communications LLC do business with the trading name of Netgate. A major software product they develop is pfSense®.
+**Rubicon Communications LLC** do business with the trading name of **Netgate**. A major software product they develop is **pfSense®**.
 
-The pfSense® Project is a free open source customized distribution of FreeBSD ( https://en.wikipedia.org/wiki/FreeBSD ) 
+The pfSense® Project is a free open source customized distribution of **FreeBSD** ( https://en.wikipedia.org/wiki/FreeBSD ) 
 tailored for use as a firewall and router entirely managed by an easy-to-use web interface. No FreeBSD knowledge is 
 required to deploy and use pfSense software. In addition to being a powerful, flexible firewalling and routing platform, 
 pfSense software includes a long list of related features. 
