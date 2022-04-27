@@ -2,7 +2,7 @@ Recently the Covid restrictions were eased. This allowed us to have our first *r
 after many months of *virtual* meetings using the NZOSS Big Blue Button web-conferencing system. 
 At the same time this meeting was linked to BBB for on-line attendees.
 
-# pfSense on FreeBSD using PC Engine hardware platform.
+# pfSense on FreeBSD using PC Engines hardware platform.
 
 **Rubicon Communications LLC** do business with the trading name of **Netgate**. A major software product they develop is **pfSense®**.
 
@@ -16,7 +16,7 @@ Community Edition version: https://www.pfsense.org/download/
 
 
 **Roger Hardy** delivered a presentation that involved the demonstration of pfSense. Netgate provide hardware for the 
-FreeBSD/pfSense solution. Roger also displayed a suitable hardware platform from PC Engine.
+FreeBSD/pfSense solution. Roger also displayed a suitable hardware platform from PC Engines.
 
 As a follow-up to his presentation, Roger posted the following links...
 
