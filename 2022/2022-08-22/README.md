@@ -12,4 +12,5 @@ useful tools!
 ## Links
 
 * [Meetup](https://www.meetup.com/waikatolinuxusersgroup/events/283776695/)
+* [Youtube](https://www.youtube.com/watch?v=rd4sCvxhop8)
 
