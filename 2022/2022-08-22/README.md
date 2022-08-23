@@ -1,12 +1,22 @@
 # 2022-08-22
 
-Command-line tools under Linux are the bread and butter of sysadmins, but any
-user can benefit from a wide variety of hidden gems. In this meetup, we will
-explore essential command-line tools that one should be aware of. Please join
-us if you would to like learn about them or even demo your personal set of
-useful tools!
+## Command-line tools under Linux
+
+**Peter Reutemann** delivered a presentation on *Command-line tools under Linux*. 
+They are the bread and butter of sysadmins, but any user can benefit from a wide 
+variety of hidden gems. Peter explored essential command-line tools that one 
+should be aware of.
 
 * [Peter's notes](peter/README.md)
+
+
+## bash-help GUI
+
+** Ian Stewart** presented his Python GUI programs that provide help for bash commands. 
+The programs have an alphabetical tree view to aid selection of a bash command for 
+which help is desired. Also a variation of the program contains a search window facility.
+
+* [Bash-Help GUI files and presentation](ian/README.md)
 
 
 ## Links
