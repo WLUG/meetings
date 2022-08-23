@@ -17,8 +17,8 @@ The python programs are available for both Gtk3 & Gtk4 and PyQt5 & PyQt6.
 * bash-help-gui-gtk3-search.py
 
 ## Gtk4:
-* bash-help-gui-gtk3.py
-* bash-help-gui-gtk3-search.py
+* bash-help-gui-gtk4.py
+* bash-help-gui-gtk4-search.py
 
 ## PyQt5:
 
