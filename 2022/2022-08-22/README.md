@@ -12,7 +12,7 @@ should be aware of.
 
 ## bash-help GUI
 
-** Ian Stewart** presented his Python GUI programs that provide help for bash commands. 
+**Ian Stewart** presented his Python GUI programs that provide help for bash commands. 
 The programs have an alphabetical tree view to aid selection of a bash command for 
 which help is desired. Also a variation of the program contains a search window facility.
 
