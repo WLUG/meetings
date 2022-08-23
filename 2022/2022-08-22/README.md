@@ -16,7 +16,7 @@ should be aware of.
 The programs have an alphabetical tree view to aid selection of a bash command for 
 which help is desired. Also a variation of the program contains a search window facility.
 
-* [Bash-Help GUI files and presentation](ian/README.md)
+* [Bash-Help GUI files and presentation](ian/)
 
 
 ## Links
