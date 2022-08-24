@@ -10,7 +10,7 @@ should be aware of.
 * [Peter's notes](peter/README.md)
 
 
-## bash-help GUI
+## Bash Help GUI
 
 **Ian Stewart** presented his Python GUI programs that provide help for bash commands. 
 The programs have an alphabetical tree view to aid selection of a bash command for 
