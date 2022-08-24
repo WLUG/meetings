@@ -29,6 +29,3 @@ The python programs are available for both Gtk3 & Gtk4 and PyQt5 & PyQt6.
 
 * bash-help-gui-qt6.py
 * bash-help-gui-qt6-search.py
-
-Note: The way the *subprocess* module from Python is used is not ideal. If improved methods of 
-using *subprocess* are implemented then these files will be updated.
