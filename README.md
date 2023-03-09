@@ -13,18 +13,18 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2014-03-24](2014/2014-03-24)  **Using Android**
 * 2014-04-28  **Chart creation using LibreOffice and BrewPi**
 * 2014-05-26  **Elementary OS and Sunflower filemanager**
-* 2014-06-23  **Godot Game Engine and Manjaro**
-* 2014-07-28  **Yubikey**
+* [2014-06-23](2014/2014-06-23)  **Godot Game Engine and Manjaro**
+* [2014-07-28](2014/2014-07-28)  **Yubikey**
 * 2014-08-25  **Blender**
 * 2014-09-22  **Docker**
-* 2014-10-20  **Crypto2.0 and OwnCloud**
+* [2014-10-20](2014/2014-10-20)  **Crypto2.0 and OwnCloud**
 * 2014-11-24  **AGM 2014**
 
 ## 2015
 * 2015-02-23  **Android x86, Puppy Linux, and Testing Techniques**
 * 2015-03-23  **Raspberry Pi 2 and BeagleBone**
 * 2015-04-27  **Security**
-* 2015-05-25  **Git**
+* [2015-05-25](2015/2015-05-25)  **Git**
 * 2015-06-22  **Chat at the Cook**
 * 2015-07-27  **Terminal Server Project and Linux Mint**
 * 2015-08-24  **Docker**
@@ -33,15 +33,15 @@ Below is a summary of the Meeting dates and the meeting topic.
 * 2015-11-23  **AGM 2015**
 
 ## 2016
-* 2016-01-25  **RAID1 Configurations**
-* 2016-02-22  **Alpine Linux and Knoppix**
-* 2016-03-28  **Social**
-* 2016-04-25  **Emacs and LXDE**
+* [2016-01-25](2016/2016-01-25)  **RAID1 Configurations**
+* [2016-02-22](2016/2016-02-22)  **Alpine Linux and Knoppix**
+* [2016-03-28](2016/2016-03-28)  **Social**
+* [2016-04-25](2016/2016-04-25)  **Emacs and LXDE**
 * 2016-05-23  **Clear Linux and Ubunt Mate 16.04**
-* 2016-06-27  **Systemd vs. SystemV**
-* 2016-07-25  **X11 / Wayland / Mir, and Endless OS**
+* [2016-06-27](2016/2016-06-27)  **Systemd vs. SystemV**
+* [2016-07-25](2016/2016-07-25)  **X11 / Wayland / Mir, and Endless OS**
 * 2016-08-22  **Introduction to Linux**
-* 2016-09-26  **Blender, Dia, Inkscape, and GIMP**
+* [2016-09-26](2016/2016-09-26)  **Blender, Dia, Inkscape, and GIMP**
 * 2016-10-24  **Ubuntu M10 Tablet and Raspbian PIXEL**
 * 2016-11-28  **AGM 2016**
 
