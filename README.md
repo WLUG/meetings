@@ -20,7 +20,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2014-10-20](2014/2014-10-20)  **Crypto2.0 and OwnCloud**
 * 2014-11-24  **AGM 2014**
 
-## 2015
+## [2015](2015)
 * 2015-02-23  **Android x86, Puppy Linux, and Testing Techniques**
 * 2015-03-23  **Raspberry Pi 2 and BeagleBone**
 * 2015-04-27  **Security**
@@ -32,7 +32,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * 2015-10-26  **Chat at the Cook**
 * 2015-11-23  **AGM 2015**
 
-## 2016
+## [2016](2016)
 * [2016-01-25](2016/2016-01-25)  **RAID1 Configurations**
 * [2016-02-22](2016/2016-02-22)  **Alpine Linux and Knoppix**
 * [2016-03-28](2016/2016-03-28)  **Social**
@@ -45,7 +45,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * 2016-10-24  **Ubuntu M10 Tablet and Raspbian PIXEL**
 * 2016-11-28  **AGM 2016**
 
-## 2017
+## [2017](2017)
 * 2017-01-23  **SGM and Distro Roundup**
 * [2017-02-27](2017/2017-02-27)  **Browsers for Linux and Linux Conference**
 * [2017-03-27](2017/2017-03-27)  **A/V Setup and Raspberry Pi**
@@ -58,7 +58,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2017-10-23](2017/2017-10-23)  **Ubuntu 17.10, Ubuntu upgrading and Q4OS**
 * 2017-11-27  **AGM 2017**
 
-## 2018
+## [2018](2018)
 * 2018-01-22  **Meltdown and Spectre**
 * [2018-02-26](2018/2018-03-26)  **Manjaro**
 * 2018-03-26  **Rsync**
@@ -71,7 +71,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * 2018-10-22  **Free Open Source Software**
 * [2018-11-26](2018/2018-11-26)  **AGM 2018**
 
-## 2019
+## [2019](2019)
 * [2019-01-21](2019/2019-01-21)  **2D Animations**
 * [2019-02-25](2019/2019-02-25)  **OpenWrt**
 * [2019-03-25](2019/2019-03-25)  **Termux - Android terminal emulator**
@@ -84,7 +84,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2019-10-21](2019/2019-10-21)  **Print Server using Raspberry Pi**
 * 2019-11-25  **AGM 2019**
 
-## 2020
+## [2020](2020)
 * [2020-01-20](2020/2020-01-20)  **LineageOS**
 * 2020-02-24  **Pinebook Pro**
 * 2020-03-23  **Naomi Project**
@@ -97,7 +97,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2020-10-19](2020/2020-10-19)  **Blockchain in XML and Ubuntu online upgrade**
 * [2020-11-23](2020/2020-11-23)  **LISP Programming Language**
 
-## 2021
+## [2021](2021)
 * 2021-01-25  **AGM 2020 and Guest Account Cleaner**
 * 2021-02-22  **Xen based Hypervisors**
 * [2021-03-22](2021/2021-03-22)  **Processing Video and Audio**
@@ -110,7 +110,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2021-10-18](2021/2021-10-18)  **Syncthing**
 * [2021-11-22](2021/2021-11-22)  **Utuntu 21.10 and Fast Reverse Proxy**
 
-## 2022
+## [2022](2022)
 * [2022-01-24](2022/2022-01-24)  **AGM 2021**
 * [2022-02-28](2022/2022-02-28)  **openbalena and OpenWrt**
 * [2022-03-28](2022/2022-03-28)  **Pipewire**
@@ -123,6 +123,6 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2022-10-25](2022/2022-10-25)  **Docker**
 * 2022-11-28  **Window Managers for Linux**
 
-## 2023
+## [2023](2023)
 * 2023-01-23  **AGM 2022**
 * 2023-02-27  **AGM 2022 (2nd attempt)**
