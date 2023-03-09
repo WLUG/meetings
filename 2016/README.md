@@ -16,7 +16,7 @@ Discussion of meetup.com's new pricing strategy (http://help.meetup.com/customer
 
 Feel like demoing another distro? Or some other great open-source tool (doesn't necessarily have to be Linux)? Then contact organizer Peter and let him know.
 
-## [2016-03-28]](2016-03-28) Social 
+## [2016-03-28](2016-03-28) Social 
 
 Social Meeting.
 
