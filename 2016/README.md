@@ -1,10 +1,10 @@
 # Meetings for 2016
 
-## 2016-01-25 RAID1 Configurations
+## [2016-01-25](2016-01-25) RAID1 Configurations
 
 Lawrence D'Oliveiro and Ian Stewart will demo RAID 1 configurations and also using rsync for backups.
 
-## 2016-02-22 Alpine Linux and Knoppix
+## [2016-02-22](2016-02-22) Alpine Linux and Knoppix
 
 Peter Reutemann will demo Alpine Linux (http://www.alpinelinux.org/), a security-oriented, lightweight Linux distribution based on musl libc and busybox.
 
@@ -16,11 +16,11 @@ Discussion of meetup.com's new pricing strategy (http://help.meetup.com/customer
 
 Feel like demoing another distro? Or some other great open-source tool (doesn't necessarily have to be Linux)? Then contact organizer Peter and let him know.
 
-## 2016-03-28 Social 
+## [2016-03-28]](2016-03-28) Social 
 
 Social Meeting.
 
-## 2016-04-25 Emacs and LXDE
+## [2016-04-25](2016-04-25) Emacs and LXDE
 
 Fun with emacs (https://en.wikipedia.org/wiki/Emacs), the extensible, customizable, self-documenting, real-time display editor. This should be fun, even for vi (https://en.wikipedia.org/wiki/Vi) users.
 
@@ -32,13 +32,13 @@ Trials and tribulations with Intel's Clear Linux (https://clearlinux.org/).
 
 One week of using Ubuntu Mate 16.04 after years of Linux Mint - some experiences.
 
-## 2016-06-27 Systemd vs. SystemV
+## [2016-06-27](2016-06-27) Systemd vs. SystemV
 
 'systemd', which has replaced SYSTEMV 'init' in nearly ALL current Linux distributions, seems to go against the fundamental philosophy of Linux/Unix - Doug Mcllroy, the inventor of Unix pipes, summarized the Unix/Linux philosophy as follows: "This is the Unix philosophy: Write programs that do one thing and do it well..." systemd has a 'finger-in-all-pies' approach & seems quite complex.
 
 Let's discuss pros and cons of systemd.
 
-## 2016-07-25 X11 / Wayland / Mir, and Endless OS
+## [2016-07-25](2016-07-25) X11 / Wayland / Mir, and Endless OS
 
 X11 (https://en.wikipedia.org/wiki/X_Window_System), the most common display server (https://en.wikipedia.org/wiki/Display_server) on Linux, is showing its age. Newcomers, like Wayland (https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)) and Mir (https://en.wikipedia.org/wiki/Mir_(software)) are trying to address shortcomings and provide a basis for the future.
 
@@ -48,7 +48,7 @@ If you want to present one of them, then please let the organizer (Peter) know o
 
 Ian Young will also demo Endless OS (https://endlessm.com/), an operating system that "comes with everything your family needs".
 
-## 2016-08-22 Introduction to Linux
+## 2016-08-22] Introduction to Linux
 
 An introduction to Linux - features, history, examples of popular flavors (Debian, Ubuntu, Red Hat, etc) and user interfaces (MATE, Gnome3, KDE, Unity, etc).
 
@@ -62,7 +62,7 @@ Presenters:
 * Lawrence D'Oliveiro: KDE
 * John Thompson: Frustrations and delights as a disgruntled Windows 9x user.
 
-## 2016-09-26 Blender, Dia, Inkscape, and GIMP
+## [2016-09-26](2016-09-26) Blender, Dia, Inkscape, and GIMP
 
 Let's show off what applications you can use on Linux for multi-media task:
 
