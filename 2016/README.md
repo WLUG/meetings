@@ -48,7 +48,7 @@ If you want to present one of them, then please let the organizer (Peter) know o
 
 Ian Young will also demo Endless OS (https://endlessm.com/), an operating system that "comes with everything your family needs".
 
-## 2016-08-22] Introduction to Linux
+## 2016-08-22 Introduction to Linux
 
 An introduction to Linux - features, history, examples of popular flavors (Debian, Ubuntu, Red Hat, etc) and user interfaces (MATE, Gnome3, KDE, Unity, etc).
 
