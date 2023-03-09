@@ -61,37 +61,3 @@ Ever wondered what Docker was all about? Peter Reutemann will give a hands-on in
 ## 2022-11-28 Window Managers for Linux
 
 Gnome, MATE, Cinnamon and KDE are the most common window managers for Linux desktops. But what about the lesser known ones? There are plenty of compositing, stacking or tiling window managers out there. Let's have a look at some (https://en.wikipedia.org/wiki/Comparison_of_X_window_managers). Maybe you'll find the one that you have been looking for all those years?
-
-## 2023-01-23 AGM 2022
-
-The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
-
-Agenda
-* President's Report
-* Treasurer's Report
-* Election of 2023 Committee
-* Retirement of WLUG servers
-* General business
-* Consumption of pizza (if not online)
-
-Please note, only paid-up members of the society will be able to vote.
-
-
-2023-02-27
-
-AGM 2022 (2nd attempt)
-
-
-The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
-
-Agenda
-* President's Report
-* Treasurer's Report
-* Election of 2023 Committee
-* Retirement of WLUG servers
-* General business
-
-If the offices cannot be filled, we will initiate the dissolution of the society. For details see minutes from previous AGM attempt.
-
-Please note, only paid-up members of the society will be able to vote.
-
