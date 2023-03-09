@@ -14,7 +14,7 @@ Agenda
 
 Ian Stewart: Map Tiles and Bash - how Tile Mapping Service (TMS) works along with BASH command file to access maps and montage them
 
-## 2014-03-24 Using Android
+## [2014-03-24](2014-03-24) Using Android
 
 Lawrence D'Oliveiro
 
