@@ -79,12 +79,8 @@ The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
 Agenda (preliminary)
 
 * President's Report
-
 * Treasurer's Report
-
 * Election of 2018 Committee
-
 * General business
-
 * Consumption of pizza
 
