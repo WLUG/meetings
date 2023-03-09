@@ -1,0 +1,2457 @@
+===
+
+2014-01-20
+
+AGM 2013
+
+Details
+
+Agenda
+
+* President's Report
+* Treasurer's Report
+* Adoption of updated charter
+* Election of 2014 Committee
+* Consumption of pizza
+
+Comments
+
+David M.~
+
+Bogged down slightly in some areas, otherwise very good
+
+Peter R.~
+
+Excellent AGM. Moved things ahead with charter and financials. Four new members signed up.
+
+Elroy L.~
+
+Covered everything we needed to.
+
+Chris O.~
+
+AGM went very well. Thanks to Peter, Rene, Tony and Michael Ryan for their preparations.
+
+===
+
+2014-02-24
+
+Tile Mapping Service
+
+Details
+
+Ian Stewart: Map Tiles and Bash - how Tile Mapping Service (TMS) works along with BASH command file to access maps and montage them
+
+Comments
+
+===
+
+2014-03-24
+
+Using Android
+
+Details
+
+Lawrence D'Oliveiro
+
+* Using Android: UI conventions, vendor customization
+
+* Structure of Android: Linux kernel, use of processes and user IDs, Toolbox Shell
+
+* Programming Android: app (APK) structure, Java & Dalvik, Bionic runtime, privilege model, SDK, NDK (for C/C++ code), platform APIs, OpenGL-ES
+
+* Hacking Android: AOSP, alternative ROMs
+
+Comments
+
+David M.~
+
+Sounds great. A couple of little requests:
+1. Explanation of the Android file/directory tree and related storage conventions
+2. A quick tour through a "Hello, world" app, starting off with simple text display, then adding a couple of widgets eg an input field, a button to send that input to a web app, an output field to display the result.
+
+Sione.~
+
+Looking forward to this
+
+Peter R.~
+
+Interesting talk by Lawrence. Finally got an intro to Android. Great to see new faces as well!
+
+Chris O.~
+
+Informative and showed a number of the steps for starting off creating an Android app.
+
+Sione.~
+
+Thanks Lawrence for sharing the Android build process. Also good to see other Linux users. Looking forward to future meetings.
+
+===
+
+2014-04-28
+
+Chart creation using LibreOffice and BrewPi
+
+Details
+
+Due to William's presentation on the Godot game engine (https://www.meetup.com/WaikatoLinuxUsersGroup/events/165977142/) being shifted to May, we have a different line-up for this meeting:
+
+* Ian Stewart: dynamic chart creation using LibreOffice on Linux and how it compares to MS Excel on Windows
+
+* Chris O'Halloran: early stages of a BrewPi (http://www.brewpi.com/) setup
+
+Comments
+
+Test.~
+
+Test
+
+===
+
+2014-05-26
+
+Elementary OS and Sunflower filemanager
+
+Details
+
+New line-up due to illness of original main presenter:
+
+* Ian Stewart: Elementary OS
+
+* Peter Reutemann: Sunflower FileManager
+
+Comments
+
+===
+
+2014-06-23
+
+Godot Game Engine and Manjaro
+
+Details
+
+William McKee is demoing the Godot Game Engine (http://www.godotengine.org/wp/), released under the MIT license. Similar to Unity3D (http://unity3d.com/) in features, it provides tools to quickly create games under Linux, Mac OSX and Windows.
+
+Ian Young will give a quick run-down of the Manjaro (http://manjaro.org/) distribution.
+
+Comments
+
+Peter R.~
+
+Due to illness of speaker, the presentation was moved to June.
+
+John T.~
+
+Hey people,
+How do I transcode a mp4 to .ts so it can be played on tv???
+
+Elroy L.~
+
+Apologies, work commitments.
+
+Peter R.~
+
+Very good turnout with plenty of first timers. Interesting demonstration of Manjaro Linux (XFCE) and funky demo of Godot game engine.
+
+William M.~
+
+Great meetup - lots of people i hadn't met before.
+Great to finally get the 'waiting for godot' talk out of the way. I hope people enjoyed it, and i would love to hear any success from it :)
+cheers, william
+
+Chris O.~
+
+After the meeting, I shifted the godot executable into /usr/local/bin and then ran it using optirun godot . This turned on my laptop's Nvidia card to accelerate the graphics. The performance was even slicker then.
+
+Andrew P.~
+
+It was awesome! I did not see so many people which are really into computers for a lot of years :-)
+
+===
+
+2014-07-28
+
+Yubikey
+
+Details
+
+The Yubikey is one time password generator that conveniently connects a USB keyboard to your PC. It is port powered and small enough to kept on your keyring [1].
+
+The Yubikey uses Yubico's authentication server and can be used conveniently with Lastpass.com to provide two factor authentication to your online password vault. Third parties have written yubikey authentication mechanisms to secure restricted access to Apache webservers. There are many other applications and there are alternative hardware yubikeys capable of connection to smart phones.
+
+The authentication server technology is open source allowing users to create their own authentication servers. Yubico provides their service for free. At roughly $US25 a key, the technology is very competitively priced (cf RSA tokens) and well within the price range of most enthusiasts. Unfortunately, Google doesn't (yet) provide it as an option for their two factor authentication.
+
+The presenter will talk about lastpass.com and apache authentication.
+
+[1] https://www.yubico.com/products/yubikey-hardware/yubikey/
+
+Comments
+
+Chris O.~
+
+I should have been more accurate. You can sort of hack your yubikey to do two factor authentication with Gmail but it's certainly not out of the box.
+
+Maybe if I get it going, it could be another thing to present.
+
+Chris O.~
+
+An update. I have figured out two factor authentication using the yubikey for google accounts.
+
+Eric L.~
+
+I was given a YubiKey as part of the delegate pack at LCA2011. It's been sitting there waiting for me to make use of it for years. Super keen to see it in action :)
+
+Chris O.~
+
+I know you weren't able to make the presentation but have you tried using it yet?
+
+Eric L.~
+
+Yeah, GUTTED that I missed it. Had the day pile up on me :)
+
+I can't even FIND my Yubikey at the moment. I'm relatively certain it's within five metres of my current location. But no, I never tried actually putting it to use.
+
+Chris O.~
+
+http://opensource.yubico.com/
+More resources for the yubikey
+
+===
+
+2014-08-25
+
+Blender
+
+Details
+
+3D animations (or CGI) are everywhere nowadays. You don't need deep pockets for purchasing good software, the FLOSS world has its own package for creating first-class animations: Blender (http://www.blender.org/).
+
+Lawrence D'Oliveiro will give a hands-on demonstration on how to use Blender, introduce you to the basics and show how to create simple animations. He will also present some of the animations that he created over the years.
+
+Comments
+
+Lawrence D.~
+
+I’m wondering whether to suggest that, if anyone has their own machine with a suitably-recent version of Blender installed, to bring it and maybe follow along some of the demonstrations I plan to do.
+
+Peter R.~
+
+Sounds like a good idea!
+
+John T.~
+
+Hi lawrence,
+I have a desktop with Blender installed and would like to do as you suggest but you will need to talk very slowly and use small words for me to understand you...
+
+Bryan H.~
+
+Still living in Whakatane, so won't be able to make it this time around... Hopefully next time!
+
+Elroy L.~
+
+Sick :(
+
+Peter R.~
+
+Very cool Blender demo. A pro like Lawrence makes it look so easy! But even a noob can see the potential that Blender offers. Well done!
+
+Peter R.~
+
+Very cool Blender demo. A pro like Lawrence makes it look so easy! But even a noob can see the potential that Blender offers. Well done!
+
+John T.~
+
+Agreed. I would like to see more of this type of meeting. Blender, Gimp, Inkscape and etc.
+Thanks Lawrence...
+
+===
+
+2014-09-22
+
+Docker 
+
+Details
+
+Virtualization has been become commonplace nowadays, with lots of different implementations. Docker (https://www.docker.com/) provides an as-thin-as-possible approach, making use of the kernel's functionality of resource isolation, eliminating the need for installing an operating system for the guest system.
+
+Andrew Parnasov will give an introduction to Docker, how to set it up, how to use and what it can be used for.
+
+Comments
+
+Elroy L.~
+
+Sorry guys, work commitments
+
+Peter R.~
+
+Really cool to see how Docker works. Much like git for virtualization.
+
+===
+
+2014-10-20
+
+Crypto2.0 and OwnCloud
+
+Details
+
+Greg B.: A talk with an overview of the so-called "Crypto2.0" open source projects that are attempting to be overlays for the bitcoin network. Why does bitcoin need overlays and possible future directions in cryptofinance in general? A brief round-up of the emerging Crypto2.0 projects out there, Counterparty, Mastercoin, Bitshares, Ripple, Stellar, Next and CoinSpark. Then a more in-depth discussion of Open-Transactions (openTXS).
+
+Peter R.: Running OwnCloud (http://owncloud.org/) on a Raspberry Pi.
+
+Comments
+
+Peter R.~
+
+Very interesting, exhaustive and dynamic presentation on crypto finance 2.0 - and a bit of owncloud.
+
+Chris O.~
+
+Very interesting meeting and a good turnout. Thanks Greg for your talk. It quite impressive to the variety of concepts and thought that goes into alternative currency systems.
+
+Thanks too to Peter for the heads up on OwnCloud.
+
+===
+
+2014-11-24
+
+AGM 2014
+
+Details
+
+Agenda:
+
+President's Report
+Treasurer's Report
+Election of 2015 Committee
+Consumption of pizza
+
+Comments
+
+Peter R.~
+
+Sufficient attendance for quorum. Worked through agenda relatively quickly and elected new committee. Discussed things for 2015 (SFD, library, workshops). Good pizza!
+
+===
+
+2015-02-23
+
+Android x86, Puppy Linux, and Testing Techniques
+
+Details
+
+The year starts with a look at not-so-common Linux distributions.
+
+Ian Young: Android x86 project (http://www.android-x86.org/) and Puppy Linux (http://puppylinux.org/).
+
+Baden Delamore: brief demos of some of the
+tools and penetration testing techniques available through Kali (https://www.kali.org/).
+
+Comments
+
+Peter R.~
+
+I was only able to attend the first part on Kali. Eye opening and scary at the same time.
+
+Chris O.~
+
+Thanks Baden for an introductory and eye-opening talk. If you're keen, I think a Part 2 would be well received.
+Thanks too to Ian for persevering with the technical difficulties of the projector.
+
+===
+
+2015-03-23
+
+Raspberry Pi 2 and BeagleBone
+
+Details
+
+Andrew Crosby: Raspberry Pi 2 (http://en.wikipedia.org/wiki/Raspberry_Pi) demo, what's new, what's hot.
+
+Michael Cree: BeagleBone (http://en.wikipedia.org/wiki/BeagleBoard#BeagleBone) demo, consisting of general introduction of the BeagleBone and on using it for interfacing with an inertial measurement unit (IMU).
+
+Comments
+
+Peter R.~
+
+Excellent talks. Refreshing to see very low-level, hardware stuff being presented. Linux maybe a breeze on the Desktop, but embedded is still a lot of tinkering involved.
+
+Chris O.~
+
+I'd like to add my thanks to the presenters for demonstrating their knowledge of the two ARM based devices. Two really interesting talks but as Peter said below, still quite a bit of tinkering to get some things to work.
+
+===
+
+2015-04-27
+
+Security
+
+Details
+
+Due to the positive feedback on Baden Delamore's demonstration of Kali (https://www.kali.org/) back in February, there will be a follow up to, delving deeper into the world of (in-)security.
+
+Comments
+
+Hieu.~
+
+Hi, I never been in Waikato Uni, and I expect it to be big, and I may get lost ... Can you please tell me more precisely where the event will be held ? Thanks.
+
+Peter R.~
+
+The campus is not that big. The meeting takes place in building MS4: http://www.waikato.ac.nz/contacts/map?MS4
+
+Hieu.~
+
+Thanks !
+
+Chuck
+
+Very informative even for a novice
+
+Peter R.~
+
+LibreOffice extensions that cover thesaurus and reading text: http://extensions.libreoffice.org/extension-center/american-british-canadian-spelling-hyphen-thesaurus-dictionaries http://extensions.libreoffice.org/extension-center/read-text
+
+Chuck.~
+
+Thanks Peter
+
+Peter R.~
+
+Baden gave a great overview of cyber security, attack vectors and how they can be exploited. Cool demo again as well!
+
+===
+
+2015-05-25
+
+Git
+
+Details
+
+git (https://www.git-scm.com/) - from novice to master. Lawrence D'Oliveiro will introduce you to the distributed revision control system git, demonstrating the basic commands and also more advanced actions.
+
+Comments
+
+Lawrence D.~
+
+I thought I was going to be on in July!
+
+Peter R.~
+
+Sorry, that was my fault. Forgot that we still had a meeting in May. Would you be able to do it next week? Otherwise I reschedule for July and we'll just have social meeting and maybe some disto roundup next week.
+
+Lawrence D.~
+
+Yes, I can do a presentation on Monday. Will the audience already be familiar with version control systems? Otherwise I can introduce the concept.
+
+Chris O.~
+
+Thanks Lawrence for your talk and for the following tip.
+git add -p
+
+Tony T.~
+
+I recall at least 8 at the meeting, but I guess that they were not registered with Meetup, or didn't RSVP.
+
+===
+
+2015-06-22
+
+Chat at the Cook
+
+Details
+
+It is time to do what many other meetups usually do: meet at a pub and have a chat over a drink! Let's all go to The Cook (upstairs) and talk all things Linux.
+
+No matter whether you are new to Linux or even never heard of it but would like to know more about it, feel free to stop by and say hi.
+
+Comments
+
+Lawrence D.~
+
+Nice, cosy venue for the Python event we had there recently. Looking forward to another pleasant evening.
+
+Peter R.~
+
+Bit noisy surroundings due to pub quiz, but with power socket available, even a Linux installation could be pulled off. Great environment to have interesting conversations.
+
+Chris O.~
+
+Sorry I couldn't make it. I was hoping to come but we've got lots on at present and then the cat decided to get sick again.
+
+Peter R.~
+
+No problem. Hopefully, we'll see you next time!
+
+===
+
+2015-07-27
+
+Terminal Server Project and Linux Mint
+
+Details
+
+Ian Stewart will talk about the Linux Terminal Server Project (https://en.wikipedia.org/wiki/Linux_Terminal_Server_Project) (LTSP) and how to connect to it using thin clients (https://en.wikipedia.org/wiki/Thin_client) and RaspberryPi (https://en.wikipedia.org/wiki/Raspberry_Pi).
+
+Peter Reutemann will give the new Linux Mint (http://blog.linuxmint.com/?p=2864) release a quick spin.
+
+Comments
+
+Lawrence D.~
+
+If there is a moment, Rod Aldridge and I would like to raise the issue of what’s happening (or not happening) with the computer lab at Te Whare O Te Ata, and see if anyone has any ideas that might help.
+
+John T.~
+
+I think it rather critical that the parents/caregivers of the target market have a LARGE assurance that their ( vunerable ) children are not going to be preyed upon. I can probably help to some degree but have some real reservations on how that can happen. Particularly as many computer experts come across as " a little strange". Repeat .. I am willing to help. but not sure how....
+
+Peter R.~
+
+Great demo by Ian, as always. Cool to see Raspberry Pi working as a thin client, hooked up to LTSP server.
+
+William M.~
+
+The script I was telling you about : https://github.com/jbradforddillon/instant-api-py
+
+Peter R.~
+
+Thanks, William!
+
+Chris O.~
+
+Good turn out. Good to see some new faces. Thanks Ian and Peter for your demo/talks
+
+===
+
+2015-08-24
+
+Docker
+
+Details
+
+Reinstalling the WLUG web-server and investigating the use of docker (https://www.docker.com/) for running the old wiki alongside the other Apache (http://httpd.apache.org/) instance.
+
+Docker experts welcome!
+
+Comments
+
+Peter R.~
+
+After initial problems with the hosted server, the base install finally got under way and docker got installed as well. The rest will follow bit by bit.
+
+===
+
+2015-09-28
+
+Raspberry Pi and TAILS
+
+Details
+
+Hieu Trinh will talk about how to use a Raspberry Pi for sorting fruit.
+
+Ian Stewart will bring along the new TAILS (https://tails.boum.org/) (The Amnesic Incognito Live System) 1.5 release.
+
+General discussion on email encryption (incl signing) and network privacy.
+
+Comments
+
+John T.~
+
+Had eye surgery on Weds 23/9/15 so there is a fair to average chance I will be able to see everyone/thing clearly....
+
+Peter R.~
+
+Hieu's talk on using the RPI for blueberry sorting was great. Amazing what kind of projects you can use the little one for! Ian's TAILS demo was, as usual, very interactive and the audience was very involved. Good stuff! Unfortunately, I had to leave early.
+
+Chris O.~
+
+Sorry to miss the talk. Family not well.
+
+William M.~
+
+Sorry to miss this - my trip to Levin was extended. Next month.
+
+Also here's some ideas for future talks:
+
+svg. I've been watching cssconf videos and it's quite inspiring what can be done nowadays. Worth watching this keynote from cssconfau (a conference which would be super cool to come to nz or at least have it every 5 years in nz like lca) - https://www.youtube.com/watch?v=lMFfTRiipOQ
+
+Unity3d. They recently released Unity3d for Linux. http://blogs.unity3d.com/2015/08/26/unity-comes-to-linux-experimental-build-now-available/. I have this running, it works great but regular crashes are a pain.
+
+===
+
+2015-10-26
+
+Chat at the Cook
+
+Details
+
+Since we don't have access to our usual meeting room, let's just get together at the Cook for a drink and chat on all things Linux and Open-Source.
+
+Comments
+
+Peter R.~
+
+Thanks to Labour Day, things were relatively quiet at The Cook and we had a nice, social meeting.
+
+===
+
+2015-11-23
+
+AGM 2015
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda (preliminary)
+* President's Report
+* Treasurer's Report
+* Election of 2016 Committee
+* Consumption of pizza
+
+Comments
+
+William M.~
+
+Sorry not going to make it, will be in Levin.
+
+Peter R.~
+
+After a slow start, agenda was processed relative quickly, with the same committee getting elected as the new one. Full minutes are located here: http://wiki.wlug.org.nz/MeetingTopics.2015-11-23
+
+===
+
+2016-01-25
+
+RAID1 Configurations
+
+Details
+
+Lawrence D'Oliveiro and Ian Stewart will demo RAID 1 configurations and also using rsync for backups.
+
+Comments
+
+William M.~
+
+Looking forward to the demo.
+I use rsync for updating my websites (including the moe jobs)- it copies my output folders accross.
+rsync -azP /home/wcmckee/* wcmckee@moe:/home/wcmckee/
+
+Peter R.~
+
+Great intro to old school raid technology by Ian and good demo of software raid using linux by Lawrence.
+
+===
+
+2016-02-22
+
+Alpine Linux and Knoppix
+
+Details
+
+Peter Reutemann will demo Alpine Linux (http://www.alpinelinux.org/), a security-oriented, lightweight Linux distribution based on musl libc and busybox.
+
+Ian Young will show how to install Knoppix (http://knoppix.net/) with the latest live image.
+
+Discussion of March meeting: potential introduction to git version control, in conjunction with CS^3 student society from Computer Science.
+
+Discussion of meetup.com's new pricing strategy (http://help.meetup.com/customer/portal/articles/1738402): going up from USD 12 per 6 months to $29.94 per 6 months.
+
+Feel like demoing another distro? Or some other great open-source tool (doesn't necessarily have to be Linux)? Then contact organizer Peter and let him know.
+
+Comments
+
+John T.~
+
+Sorry team. Last minute family issues means I need to cancel grr...
+
+Peter R.~
+
+No worries.
+
+Peter R.~
+
+Good old fashioned distro review session (Alpine Linux, Knoppix) and discussion of Meetup.com price hikes.
+
+===
+
+2016-03-28
+
+Social 
+
+Details
+
+Social Meeting.
+
+Comments
+
+===
+
+2016-04-25
+
+Emacs and LXDE
+
+Details
+
+Fun with emacs (https://en.wikipedia.org/wiki/Emacs), the extensible, customizable, self-documenting, real-time display editor. This should be fun, even for vi (https://en.wikipedia.org/wiki/Vi) users.
+
+The LXLE (http://www.lxle.net/) distribution will get presented as well.
+
+Comments
+
+William M.~
+
+Myself and Holley will make it. Luke might - his sleeping habits have improved. All the Mckee children at wlug :)
+
+Peter R.~
+
+Cool! :-)
+
+Chris O.~
+
+Apologies for not making last night's meeting. The painting jobs around the house took a bit longer to tidy up. Hope everyone enjoyed themselves. I note https://kubuntu.org/ LTS is out.
+
+===
+
+2016-05-23
+
+Clear Linux and Ubunt Mate 16.04
+
+Details
+
+Trials and tribulations with Intel's Clear Linux (https://clearlinux.org/).
+
+One week of using Ubuntu Mate 16.04 after years of Linux Mint - some experiences.
+
+Comments
+
+Peter R.~
+
+Great to see new faces. Lively discussion on Clear Linux, especially when the update failed. Ubuntu 16.04 is simply a steady distribution, despite Glade eating up all your memory.
+
+Bruce G.~
+
+I'm not into "cloud-computing", but it was interesting to hear about & maybe get a little insight as to where it might lead...I can see the advantage of it for commercial & scientific purposes, but I have horrifying visions of where it may lead to for the dumbed-down consumer...
+
+John T.~
+
+Ian gave me a live usb for clear Linux to try on my amd machine. Result was a fail of epic proportions after several error messages about cpu not supported or intel............. locked at login screen (console)
+
+===
+
+2016-06-27
+
+Systemd vs. SystemV
+
+Details
+
+'systemd', which has replaced SYSTEMV 'init' in nearly ALL current Linux distributions, seems to go against the fundamental philosophy of Linux/Unix - Doug Mcllroy, the inventor of Unix pipes, summarized the Unix/Linux philosophy as follows: "This is the Unix philosophy: Write programs that do one thing and do it well..." systemd has a 'finger-in-all-pies' approach & seems quite complex.
+
+Let's discuss pros and cons of systemd.
+
+Comments
+
+Bruce G.~
+
+What do YOU think?...or has the fluoridated water made you totally complacent? :-P
+
+Lawrence D.~
+
+Does the Linux kernel “do one thing, and do it well”?
+
+Does the X11 server “do one thing, and do it well”?
+
+“man bash” outputs a text that is over 5000 lines long. Does bash “do one thing, and do it well”?
+
+Bruce G.~
+
+Lawrence - just because a system already has problems - we should not stand by and enable MORE problems to be added?
+
+Bruce G.~
+
+Re: "bash" - Debian now ships with "Dash", a considerably smaller shell...also there are others - I personally like "fish" = the "fRIENDLY iNTERACTIVE shELL"
+
+William M.~
+
+Hard of xonsh? Talk at pycon2016. https://www.youtube.com/watch?v=uaje5I22kgE Crowd loved it.
+
+William M.~
+
+There is no stopping systemd. I have no choice.
+
+Bruce G.~
+
+Check out "Devuan"
+
+Bruce G.~
+
+http://devuan.org/
+
+William M.~
+
+Thanks Bruce, I do know about Devuan. May have to give it a go :)
+
+Lawrence D.~
+
+I see a number of not-quite-responses to my questions that dodge my actual point: that the fond idea that the Linux environment consists primarily of a bunch of lightweight components that “do one thing, and do it well” is a half-truth. The reality is that there are a whole host of much more heavyweight components that have to do many things, in order to provide the environment in which these lighter-weight components can exist. One could not operate without the other.
+
+We saw this in the early days of the Linux kernel itself, when it was criticized for not being a small, modular microkernel. Yet, today, the microkernel concept remains as marginal as ever, while the entire computing world--even Microsoft--seems to be converging on Linux.
+
+And yet some insist on repeating history for its own sake, again resorting to subjective and emotional arguments, rather than rational, technical ones.
+
+So enough with the arbitrary and selective derogations of these heavyweight components, OK?
+
+William M.~
+
+Looking forward to your talk on this Lawrence.....
+
+
+William M.~
+
+Excellent meetup as always. I enjoyed giving a few of the commands Lawrence demoed a go.
+
+===
+
+2016-07-25
+
+X11 / Wayland / Mir, and Endless OS
+
+Details
+
+X11 (https://en.wikipedia.org/wiki/X_Window_System), the most common display server (https://en.wikipedia.org/wiki/Display_server) on Linux, is showing its age. Newcomers, like Wayland (https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)) and Mir (https://en.wikipedia.org/wiki/Mir_(software)) are trying to address shortcomings and provide a basis for the future.
+
+Let's have a look at what each of the display servers' strengths and weaknesses are.
+
+If you want to present one of them, then please let the organizer (Peter) know or post in the forum.
+
+Ian Young will also demo Endless OS (https://endlessm.com/), an operating system that "comes with everything your family needs".
+
+Comments
+
+William M.~
+
+It was great to hear about endless os from Ian. Something similar built with rasbian would be neat. Would add blender and scribus to it also.
+
+Thanks peter for talking about Wayland and mir.
+
+Quite a decent turnout - I counted 16 people.
+
+Peter R.~
+
+Excellent group effort to discuss Wayland and Mir, due to lack of volunteers. Endless OS demo was quite interesting, too. Very polished distro!
+
+John T.~
+
+Good meeting. Looks to me like Wayland may have a few hoops to jump yet. Liked the Endless OS but would like to be able to see what is happening during update/upgrades via cli or some other means rather than a spinning cursor..
+
+===
+
+2016-08-22
+
+Introduction to Linux
+
+Details
+
+An introduction to Linux - features, history, examples of popular flavors (Debian, Ubuntu, Red Hat, etc) and user interfaces (MATE, Gnome3, KDE, Unity, etc).
+
+Advantages and disadvantages to Windows.
+
+Presenters:
+
+* William Mckee: History
+* Peter Reutemann: MATE and XFCE
+* Rowan Schischka: Gnome3 and Unity
+* Lawrence D'Oliveiro: KDE
+* John Thompson: Frustrations and delights as a disgruntled Windows 9x user.
+
+Comments
+
+Peter R.~
+
+Good idea. Who's willing to take on a part of this meeting? history, features, examples, advantages?
+
+William M.~
+
+I would be willing to create some slides and talk about the history. It's something I haven't really talked about in the past and would enjoy researching the history. Would like feedback on my slides before the talk.
+
+Peter R.~
+
+That should be fine, as long as it is at least a week beforehand. :-)
+
+William M.~
+
+ok, i will have a think about it and let you know at next wlug meeting. I am ok with making slides but not so keen on speaking. Might be best if someone else does it. Guess something to talk about at next wlug meeting.
+
+John T.~
+
+post script. Started on Fedora Core 4 then shifted around a large number of the available distributions including Suse before settling on Ubuntu
+
+Peter R.~
+
+Do you want to demo Fedora and SuSE then? Just a couple of minutes each to show what it looks like, what kind of management tools are on offer, etc.
+
+John T.~
+
+Wow! that was a really long time ago now. I have a few recollections of the likes/ not too sure what to do next in three of the systems but would be unable to demo them confidently..
+
+Peter R.~
+
+No worries.
+
+Peter R.~
+
+Nice history on Linux by William, very lively presentations, excellent live demos with lots of questions asked and answered.
+
+===
+
+2016-09-26
+
+Blender, Dia, Inkscape, and GIMP
+
+Details
+
+Let's show off what applications you can use on Linux for multi-media task:
+
+* Lawrence D'Oliveiro - using Blender (https://www.blender.org/) for creating 3D animations and Jack (http://qjackctl.sourceforge.net/) for music/audio production.
+
+* Peter Reutemann - using Dia (http://dia-installer.de/index.html.en) for creating flow charts and diagrams.
+
+* William Mckee - Inkscape (https://inkscape.org/en/) (vector drawing and text), Sozi (http://sozi.baierouge.fr/pages/10-about.html) (slide deck extension), Scribus (https://www.scribus.net/) (book design) .
+
+* Ian Stewart - a glimpse at what GIMP (https://www.gimp.org/), the image manipulation program, can do.
+
+If you are looking for alternatives for programs, give alternativeto.net (http://alternativeto.net/) a go. Quite a good source for finding open-source equivalents of proprietary programs.
+
+Comments
+
+Peter R.~
+
+Really cool Blender and Jack audio demo by Lawrence. Has been a while I've seen a venerable Korg keyboard - but great to see MIDI still alive and kicking (or drumming!). Demo of Inkscape/Sozi by William showed off what you can do with SVG in terms of very cool presentation style animations. Ian's presentation gave us a glimpse of the vast toolkit that is called Gimp. Really enjoyed the evening!
+
+John T.~
+
+Yes! Sorry I missed it. I chose to Park in Auckland's peak time traffic instead. A really poor choice.:(
+
+William M.~
+
+Great talk by Peter on Dia. Especially with the electronics diagram - something to mention to my Sister. Nice suprise to see the demo of RecordMyDesktop - something I use to record my time lapses. Inkscape was a popular topic - demos of it from myself, Lawrence and Peter. Thanks Ian for showing GIMP - always good to see others using it.
+
+===
+
+2016-10-24
+
+Ubuntu M10 Tablet and Raspbian PIXEL
+
+Details
+
+Rowan Schischka will present his Ubuntu M10 tablet (http://www.ubuntu.com/tablet/devices) and also demonstrate installing/running Android on the Raspberry Pi.
+
+The new Raspbian desktop environment PIXEL (https://www.raspberrypi.org/magpi/introducing-pixel/) will be taken for a test drive as well.
+
+Comments
+
+rowan.~
+
+Im going to be half an hour late, I'm still eating dinner.
+
+Peter R.~
+
+Started a little late, but Rowan's demo of the M10 Ubuntu tablet and running Android on a Raspberry Pi3 was really cool!
+
+Tim.~
+
+Sorry. I forgot
+
+===
+
+2016-11-28
+
+AGM 2016
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda (preliminary)
+* President's Report
+* Treasurer's Report
+* Election of 2017 Committee
+* General business (eg future of WLUG library, wording in the charter with regard to advertising of jobs using the wlug mailing list, etc)
+* Consumption of pizza
+
+Comments
+
+Lawrence D.~
+
+We also need to decide on the disposition of the library. Chris doesn’t want to keep storing it any more, and I think it has become obsolete anyway.
+
+Peter R.~
+
+Good point. Just updated the agenda.
+
+Ian S.~
+
+As part of the General Business, I propose we discuss enhancing the wording in the charter with regard to advertising of jobs using the wlug mailing list. I suggest we use the NZ Python User Group mailing list guidelines as a template for the enhancements. See: https://groups.google.com/forum/#!forum/nzpug
+
+William M.~
+
+Talked to Andrew from Mercury Energy at Kiwicon on getting Microsoft along to do a talk on how Microsoft uses Linux. Sometime next year if people are interested...
+
+Peter R.~
+
+Most of the points on the agenda could be ticked off, a separate SGM will get announced for the remainder.
+
+===
+
+2017-01-23
+
+SGM and Distro Roundup
+
+Details
+
+SGM with the following (preliminary) agenda:
+
+* elect Vice president
+
+Meeting topics
+
+* distro roundup: Fedora (http://distrowatch.com/table.php?distribution=fedora), Devuan (http://distrowatch.com/table.php?distribution=devuan), Zorin (http://distrowatch.com/table.php?distribution=zorin)
+
+* a bit different: ReactOS (http://distrowatch.com/table.php?distribution=reactos), FreeDOS (http://www.freedos.org/)
+
+Comments
+
+Peter R.~
+
+Sorted vice-president, library and hardware.
+
+===
+
+2017-02-27
+
+Browsers for Linux and Linux Conference
+
+Details
+
+With Firefox (http://www.theverge.com/2017/1/25/14376710/walt-mossberg-mozilla-firefox-browser-revived) losing ground against Chrome and sliding lower and lower in the browser rankings, how about we have a good look at the browsers available for Linux and benchmark them?
+
+Michael Cree has been to linux.conf.au (https://linux.conf.au/) recently and will talk a bit about his experience.
+
+Comments
+
+William M.~
+
+my fav talk at lca2017 was
+USING PYTHON FOR CREATING HARDWARE TO RECORD FOSS CONFERENCES. quality of talks lower than usual (see Katies/Toms talks that they done multiply times over several years, no changes).
+
+Owen M.~
+
+Sorry I can't attend this evening. :(
+
+Rod A.~
+
+Very Interesting, Particularly about the kernel and keeping track of multiple CPUs.
+
+===
+
+2017-03-27
+
+A/V Setup and Raspberry Pi
+
+Details
+
+William Mckee has been to nz.js.con recently and will talk about the A/V setup used for recording the presentations: hdmi2usb (https://hdmi2usb.tv/home/)
+
+William Mckee and Ian Stewart will demo the Raspberry Pi3, with its Bluetooth and Wifi capability. Attaching a TFT screen will be shown as well. Raspbian and Ubuntu MATE will used as operating system.
+
+Comments
+
+===
+
+2017-04-24
+
+Desktop Environments
+
+Details
+
+With Canonical killing off its desktop environment Unity in favor of GNOME (https://linux.slashdot.org/story/17/04/05/1812232/canonical-killing-unity-for-ubuntu-linux-will-switch-to-the-superior-gnome), let's have a look at some of the available desktop environments:
+
+* Ian Stewart: Ubuntu 17.04 (https://linux.slashdot.org/story/17/04/13/1512216/ubuntu-1704-zesty-zapus-featuring-unity-now-available-to-download) with Unity
+
+* William Mckee: LXDE (http://lxde.org/)
+
+* Peter Reutemann: MATE (http://mate-desktop.org/) (vanilla and mint-flavored)
+
+* Do you feel like demoing another one? KDE, XFCE, Enlightenment, OpenBox, FluxBox, ...
+
+* Ian Young: Getting a DVB-T card for laptops going - a live experiment.
+
+Comments
+
+Owen M.~
+
+Sorry, we're still travelling to Akl for chemo for my wife. I hope to be back in a few months time.
+
+Peter R.~
+
+No worries.
+
+===
+
+2017-05-22
+
+FLOSS
+
+Details
+
+FLOSS options for security-related purposes and communications - backups, cloud services, password managers, network streaming services. Particularly ones where a proprietary one is dominant e.g., Skype, Facebook, iTunes. What is your favorite alternative? Let's discuss the available options, strengths and weaknesses.
+
+Comments
+
+Rod A.~
+
+Interesting group of people.
+
+Peter R.~
+
+Great demo of protonmail and pydbus by Ian.
+
+===
+
+2017-06-26
+
+System D-Bus and Debian 9
+
+Details
+
+Ian Stewart will show how to use the System D-Bus on a Raspberry Pi 3 to receive digital pulses from the Pi's GPIO ports.
+
+Debian 9 (http://www.debian.org/) aka Stretch has been released, let's give it a spin!
+
+Comments
+
+===
+
+2017-07-24
+
+Command line Tools and Fedora 26
+
+Details
+
+Lawrence D'Oliveiro and Peter Reutemann will demo some command-line tools like cat/tac/zcat, less, column, grep, find, xargs, sort, sed, etc.
+
+Ian Young will test-drive the recently released Fedora 26 (https://getfedora.org/).
+
+Comments
+
+Don S.~
+
+Been a while since I was at WU. Room 2? ground floor? What's MS4? Nearest carpark/gate? Cheers
+
+Peter R.~
+
+Single story building, room 2. Here's the campus map: http://www.waikato.ac.nz/contacts/map?MS4
+
+Peter R.~
+
+Good refresh on command-line tools for processing data in pipelines. Nice to see that Fedora is still going strong, though I expected a bit more from the "Python classroom" edition of Fedora. No (obvious) links to tutorials or lessons, despite Jupyter Notebook installed.
+
+Don S.~
+
+Great
+
+===
+
+2017-08-28
+
+Time and Weather Station
+
+Details
+
+The nightmare of dealing with time and clocks on computers. Ian Stewart will give a presentation on the seemingly simple concept of time and its messy implementations.
+
+Peter Reutemann will briefly introduce some cool projects for your home if you have a Raspberry Pi: Weather Station (https://www.raspberryweather.com/), Hacking your heatpump (https://nicegear.co.nz/blog/hacking-a-mitsubishi-heat-pump-air-conditioner/).
+
+Comments
+
+Rod A.~
+
+I won't be able to come after all.
+
+Roderick
+
+Peter R.~
+
+Who would have thought that you can take to the sky using a time discussion? Well, Ian's presentation included the ephem library which touched on astronomy.
+
+===
+
+2017-09-25
+
+Linux Security Tools amd NixOS
+
+Details
+
+Peter Reutemann will give a quick rundown of some Linux security tools (ClamAV, Sophos scanner, Chkrootkit, Rkhunter, Lynis), introduce the cross-platform prototyping/drawing tool Pencil (http://pencil.evolus.vn/) and demo the Linux distro NixOS (https://nixos.org/).
+
+Comments
+
+Owen M.~
+
+Sorry, am still running between Hammy & Aucks with wife, but should be around from Mid-November all going well. :)
+
+Peter R.~
+
+Cool!
+
+Rod A.~
+
+NixOs looks really interesting
+
+John T.~
+
+Sorry people. Last minute crisis
+
+Peter R.~
+
+Hopefully not too serious...
+
+===
+
+2017-10-23
+
+Ubuntu 17.10, Ubuntu upgrading and Q4OS
+
+Details
+
+Peter Reutemann will give the new Ubuntu 17.10 (https://www.ubuntu.com/desktop/1710) a spin. It now comes with the GNOME shell instead of Unity...
+
+Ian Stewart will recount his experiences with upgrading the vanilla and MATE edition of Ubuntu 17.04 to 17.10.
+
+Ian Young will show off Q4OS (https://q4os.org/), a Linux distro keeping the KDE 3.5 desktop alive.
+
+Comments
+
+Peter R.~
+
+Great interactive discussion on Ubuntu 17.10 and history of display servers. Flashback to the 2000s with Ian's demo on Q4OS.
+
+===
+
+2017-11-27
+
+AGM 2017
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda (preliminary)
+
+* President's Report
+
+* Treasurer's Report
+
+* Election of 2018 Committee
+
+* General business
+
+* Consumption of pizza
+
+Comments
+
+Peter R.~
+
+Bit late start for the AGM, but productive and relatively quick afterwards. Thanks everyone for attending. Looking forward to another successful year!
+
+Rod A.~
+
+We set the stage for another year.
+
+Peter R.~
+
+The minutes are now online (thanks to Ian): http://wiki.wlug.org.nz/MeetingTopics.2017-11-27
+
+Peter R.~
+
+A draft for a code of conduct as well: http://wiki.wlug.org.nz/CodeOfConduct
+
+===
+
+2018-01-22
+
+Meltdown and Spectre
+
+Details
+
+Michael Cree will give a talk on the recent vulnerabilities Meltdown and Spectre and how they are fundamentally different to previous ones. A bit of CPU development history and architecture will illuminate why modern CPUs are so vulnerable to these attacks. He will also demo a cache attack with the proof of concept codes/exploits and offer some hints at mitigations for Linux users. This will be followed by a general discussion.
+
+Time permitting, we will watch a video from lca2018 as recommended by William Mckee.
+
+Comments
+
+Owen M.~
+
+Sorry folks hope to get along soon, within the next month or two.
+
+Peter R.~
+
+Very informative presentation and demo by Michael. Scary to see what other CPU based attacks will show up over years to come.
+
+Rod A.~
+
+Scary to think of what other vulnerabilities are hidden in the proprietary code that the chip designers haven't documented.
+
+===
+
+2018-02-26
+
+Manjaro
+
+Details
+
+Ian Young will be demoing Manjaro (https://manjaro.org/), a Linux distribution that has become very popular recently according to the Linux Journal's poll (https://linux.slashdot.org/story/18/02/14/1850259).
+
+General discussion on backup tools and strategies: What tool do you use? What approach is working for you? What should you stay away from at all costs?
+
+Comments
+
+Peter R.~
+
+Great introduction to Manjaro by Ian Y. Looks like a distro that I could live with. Good and lively discussion on backups and what other people use. Many use rsync. :-)
+
+===
+
+2018-03-26
+
+Rsync
+
+Details
+
+Due to the lively discussion around backup at last month's meeting, we decided to delve a bit deeper into backups using rsync (https://rsync.samba.org/).
+
+Lawrence D'Oliveiro will give an introduction to rsync and some of its very useful options. Combining rsync with ionice and badblocks, you can ensure that your backup doesn't slow down your system and is in a consistent state.
+
+Peter Reutemann will give a short overview of some of the user interfaces for rsync, making life easier for the less command-line savvy users among us.
+
+Angus will show how to use encryption to ensure that your backup files are secure from prying eyes.
+
+Time permitting: Lawrence and Ian will bring along a 3D printer, and present its hardware design and the printers software that runs on Linux.
+
+Comments
+
+Peter R.~
+
+Great discussions, especially afterwards. :-)
+
+Rod A.~
+
+Very informative
+
+===
+
+2018-04-23
+
+Cambridge Analytics 
+
+Details
+
+With the Cambridge Analytics scandal around (ab)using data obtained through Facebook, how about we have a look at (self-hosted) alternatives to the social network giant?
+
+Information on scandal:
+https://arstechnica.com/tech-policy/2018/03/facebooks-cambridge-analytica-scandal-explained/
+
+Social media alternatives (eg diaspora, gnu social):
+https://alternativeto.net/software/facebook/
+
+Comments
+
+Peter R.~
+
+The non-facebook crowd discussing Facebook alternatives. Diaspora and Mastodon look like good candidates. You can even host stuff yourself. Great discussions within the group.
+
+DiLer
+
+Enjoyed it too, plus the tips from the experts, thank you!
+
+===
+
+2018-05-28
+
+DiLer and Pop!_OS
+
+Details
+
+Carsten will give a short introduction to their FOSS project "DiLer" which is a LMS and school administration software and how they made it a business model. Some details are available at https://digitale-lernumgebung.de in English.
+
+Lawrence D'Oliveiro will show off Pop!_OS, the Ubuntu-derivative that System76 uses on their computers that they sell (https://system76.com/pop).
+
+Comments
+
+Peter R.~
+
+Very interesting and informative presentation by Carsten about their digital learning environment. A shame that we couldn't get any teachers to come along. Together with Lawrence, we had a go at Pop! OS. Once again, important to install gnome tweaks to turn it into a more useful/traditional desktop.
+
+Rod A.~
+
+Very educational.
+
+===
+
+2018-06-25
+
+Mail Server iRedMail
+
+Details
+
+Roger Hardy will give an overview of a fully open source production mail server installed at a small company. Includes features such as integrated groupware, calendaring, contact management, spam filtering, antivirus, and pretty much every feature found in commercial products. Easy to install, and very scalable. See iredmail.org for more details.
+
+Comments
+
+Peter R.~
+
+Very informative presentation by Roger on iRedMail. Collection of standard tools professionally wrapped up. Awesome!
+
+===
+
+2018-07-23
+
+Raspberry Pi
+
+Details
+
+Tom Butz will bring his RaspberryPi to this meetup. After introducing RISCOS and how the Pi was born, he will give a short demo of RISCOS. He will also use Debian/Raspbian on the Pi and, among other things, demo web-browsing, email-checking, database handling with COBOL, playing games and videos. Instead of using an external display via HDMI, he will also show the use of a pop-on LCD screen.
+
+Comments
+
+John T.~
+
+Sadly i got knocked off my bike by a truck a couple of weeks ago. i don’t have baby at the moment but have restricted mobility. hope to make September meet..Cheers
+
+Peter R.~
+
+Sorry to hear that. Hope you're getting well soon!
+
+===
+
+2018-08-27
+
+Alexa
+
+Details
+
+"Linux is Alexa's best mate"
+
+Brendon Ranum, owner of a voice driven highly automated accommodation business in Cambridge, discusses Alexa integration from a Linux User perspective.
+
+Brendon will bring along his collection of every Amazon Echo ever made (10 models), and talk about adding voice control in front of home automation, the pitfalls, and how a spare Raspberry Pi can be used to solve some of them. He will also demo creating and using Echo Skills, compare differences in features of the Echo's in different countries, and share how guests attitudes have changed over the last year using Alexa.
+
+Comments
+
+Peter R.~
+
+Very cool Alexa and home automation show and tell by Brendon. Might have to get me some of those mi-lights. :-)
+
+Rod A.~
+
+Very interesting, but I think I will wait until things get more standardised and foolproof.
+
+Usually found leading large scale IT change & innovation overseas, Brendon never lost his passion for electrical and electronic engineering and love of shiny things. Come along and learn why someone would put 20 of these in a house!
+
+===
+
+2018-09-24
+
+Ecryptfs, SparkyLinux, and Matrix
+
+Details
+
+Ian Stewart will present on the ecryptfs.org "home folder encryption" that has been a feature of ubuntu for many years.
+
+Rod Aldridge will demo SparkyLinux (https://sparkylinux.org/) and discuss the pros and cons.
+
+Peter Reutemann will briefly touch on matrix.org, an open network for secure, decentralized communication, with Riot (https://riot.im/) being one of the clients. Matrix/Riot has been adopted recently by the NZ Python User Group (https://chat.python.nz/).
+
+Comments
+
+Peter R.~
+
+Great review of SparkyLinux by Rod. Good alternative for a lightweight distro. Extensive dissemination of ecryptfs by Ian. Angus pointed out that Matrix will be adopted by the French government, which is pretty cool!
+
+Karun.~
+
+Good reviews of sparky and I love matrix. Thank you.
+
+Peter R.~
+
+My notes are now on github: https://github.com/WLUG/meetings/tree/master/2018/2018-09-24
+
+Peter R.~
+
+And Ian's presentations are now available as well: https://github.com/WLUG/meetings/tree/master/2018/2018-09-24/ecryptfs
+
+===
+
+2018-10-22
+
+Free Open Source Software
+
+Details
+
+John Thompson, is a trucker who got rattled with Windows 98x
+eighteen+ years ago. Spent a few frustrating years trying to understand
+a new Linux operating system and finally having the temerity to offer
+himself as a sysadmin with a surprisingly positive outcome.
+
+General discussion on patents, FOSS and the implications of Microsoft's latest action (eg joining OIN).
+
+Potentially a quick demo of the just released Ubuntu 18.10.
+
+Comments
+
+Karun.~
+
+Hello,
+Pl Consider looking at the GIS special interest group.
+www.meetup.com/Hamilton-GIS-meetup/
+FOSS supporters are most welcome
+
+Peter R.~
+
+Great to hear about John's journey, providing a community with working computers again. Lively discussion about software patents and that they still might rear their ugly head again in the future. Ubuntu is advertising more non-FOSS applications in 18.10.
+
+===
+
+2018-11-26
+
+AGM 2018
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda (preliminary)
+* President's Report
+* Treasurer's Report
+* Election of 2019 Committee
+* General business
+* Consumption of pizza
+
+Comments
+
+Peter R.~
+
+Just a reminder: In order to be eligible to vote, "only those people who were paid members in the previous financial year and who have signed a membership form for the then-current financial year will be eligible to vote." (https://github.com/WLUG/charter/blob/master/rules_140120.pdf)
+
+Peter R.~
+
+The meeting is now, in TX3 (no the usual MS4): https://www.waikato.ac.nz/contacts/map/?TX3
+
+Peter R.~
+
+After a slow start, moving through agenda at steady pace. Looking forward to a great 2019! Thanks to Ian on his presentation on (ab)using Ubuntu Server as desktop environment.
+
+===
+
+2019-01-21
+
+2D Animations
+
+Details
+
+Let's pool our resources and figure out/discover software that can be used for 2D animations. Open-source candidates could be GIMP (https://www.gimp.org/) and Synfig Studio (https://www.synfig.org/).
+
+Ian Stewart will demonstrate how to use LibreOffice Draw and LibreOffice BASIC to manage layers for generating an animation.
+
+Comments
+
+===
+
+2019-02-25
+
+OpenWrt
+
+Details
+
+Ian Stewart will talk about his experience of attempting to give an old Huawei router a new lease of life using OpenWRT (https://openwrt.org/).
+
+WLUG SGM
+
+As discussed at the Annual General Meeting (AGM) on November 26, 2018 (http://wiki.wlug.org.nz/MeetingTopics.2018-11-26), this Special General Meeting (SGM) will discuss minor adjustments to the WLUG Charter of 20 January 2014.
+
+These adjustments include (but are not limited to):
+
+    Quorum for AGM meetings.
+    Removal of sections that are obsolete. E.g. Library books and email accounts.
+    Do we need a WLUG seal?
+
+
+Comments
+
+===
+
+2019-03-25
+
+Termux - Android terminal emulator
+
+Details
+
+Peter Reutemann will give a short demo of Termux, an Android terminal emulator and Linux environment app that works directly with no rooting or setup required (https://termux.com/).
+
+Have you come across a cool, nifty or simply useful tool for Linux? Or do you use an open-source tool that could be interesting to others as well? If you feel like giving a short show-and-tell, then please drop the organizer Peter a short email to add you to one of our meetings.
+
+WLUG SMG
+Due to running out of time last at the last SGM in February, we will host another one to:
+
+    nominate third committee member
+    determine whether seal is required by Incorporated Societies
+
+
+Comments
+
+Peter R.~
+
+Finally got around to upload my TermUX presentation: https://github.com/WLUG/meetings/tree/master/2019/2019-03-25
+
+Rod A.~
+
+Finally got our constitution done. Thanks Ian Peter, Tony and others.
+
+===
+
+2019-04-15
+
+antiX Linux
+
+Details
+
+Tom Butz will demo antiX Linux (https://antixlinux.com/), a Linux distribution designed to be run from USB flash drives.
+
+Have you come across a cool, nifty or simply useful tool for Linux? Or do you use an open-source tool that could be interesting to others as well? If you feel like giving a short show-and-tell, then please drop the organizer Peter a short email to add you to one of our meetings.
+
+Comments
+
+Peter R.~
+
+Due to Easter falling on our usual WLUG meeting slot on the 22nd and the university no longer allowing rooms to be used on public holidays, this month's meeting will happen next Monday, a week earlier.
+
+At this stage, I'm still looking for a speaker. A talk on Wayland was suggested, but I never received a confirmation/blurb, unfortunately.
+
+===
+
+2019-05-20
+
+Nagios
+
+Details
+
+Lawrence D'Oliveiro will give an intro to Nagios (https://www.nagios.org/), an extensible system for monitoring all kinds of behaviour on a Linux box. He will also discuss writing your own plugins, to add monitoring of system characteristics that Nagios does not already provide as standard. The examples will be in Python, though they can be done in any language.
+This Meetup is part of the Techweek19 Waikato festival of innovation.
+
+For more information on Techweek19 Waikato visit
+https://www.cultivateit.nz
+
+Comments
+
+===
+
+2019-06-24
+
+Tools to generate .deb packages
+
+Details
+
+Peter Reutemann will talk about tools that help you generate .deb packages for Debian-based distributions, including Ubuntu.
+
+Have you come across a cool, nifty or simply useful tool for Linux? Or do you use an open-source tool that could be interesting to others as well? If you feel like giving a short show-and-tell, then please drop the organizer Peter a short email to add you to one of our meetings.
+
+Comments
+
+Peter R.~
+
+Still looking for volunteers to present. Any takers please send me a message.
+
+Peter R.~
+
+My talk and code is now available from github: https://github.com/WLUG/meetings/tree/master/2019/2019-06-24
+
+===
+
+2019-07-22
+
+GalliumOS
+
+Details
+
+Ben Radburnd will showcase GalliumOS (https://galliumos.org/) on his Chromebook.
+
+Comments
+
+Rod A.~
+
+Useful to learn how to find which Chromebooks can run a real Linux OS.
+
+===
+
+2019-08-26
+
+Falcon
+
+Details
+
+Debac Manikandan is presenting Falcon, a tool that automates a list of attacks that should be screened for, to prevent exploitation of Bluetooth Low Energy (BLE) devices. It generates a security score for each device based on the severity, complexity and the results obtained from the attacks.
+
+Comments
+
+Peter R.~
+
+Unfortunately, I can't attend this month's meeting.
+
+===
+
+2019-09-23
+
+Greylisting on a VPS
+
+Details
+
+Lawrence D'Oliveiro will talk about how he set up greylisting (https://en.wikipedia.org/wiki/Greylisting) on his VPS to reduce the amount of spam, what lessons he learned and what pitfalls to avoid.
+
+Comments
+
+===
+
+2019-10-21
+
+Print Server using Raspberry Pi
+
+Details
+
+Creating a low power consumption Print Server using a Raspberry Pi. Peter Reutemann will present/demo the material prepared by Ian Stewart as he cannot attend the meeting unfortunately.
+
+Comments
+
+Peter R.~
+
+Ian's presentation material is now available from our github repo: https://github.com/WLUG/meetings/tree/master/2019/2019-10-21
+
+===
+
+2019-11-25
+
+AGM 2019
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda (preliminary)
+* President's Report
+* Treasurer's Report
+* Election of 2020 Committee
+* Move AGM to January (after financial year ends) to have a complete treasurer's report for AGM
+* General business
+* Alternatives to meetup.com due to payment changes
+* Consumption of pizza
+
+Comments
+
+Peter R.~
+
+The AGM minutes are now online:
+http://wiki.wlug.org.nz/MeetingTopics.2019-11-25
+
+===
+
+2020-01-20
+
+LineageOS
+
+Details
+
+Is your Android phone no longer supported by your manufacturer? Then you might able to update it using a custom ROM from LineageOS (https://wiki.lineageos.org/devices/) or AospExtended ROM (https://www.aospextended.com/devices/pie). Peter Reutemann will show the process of updating the ROM on an Android phone.
+
+Comments
+
+Peter R.~
+
+My slides are now online:
+https://github.com/WLUG/meetings/tree/master/2020/2020-01-20
+
+===
+
+2020-02-24
+
+Pinebook Pro
+
+Details
+
+Michael Cree will demo his Pinebook Pro and talk about his experiences with it, as well as challenges that he has (or still has to) overcome.
+
+Comments
+
+David C.~
+
+Sorry, completely failed to remember this was happening. Next time
+
+Peter R.~
+
+No worries.
+
+===
+
+2020-03-23
+
+Naomi Project
+
+Details
+
+The voice interface represents another big shift in user interfaces, and could be as big a shift as the shift from switches to terminals, the switch from terminals to windowed GUIs, or the switch from full computers to small touchscreen devices.
+
+Unfortunately, right now most of these devices are little more than a telephone for talking to a server in the cloud. That is a big problem for privacy, and presents the user with a false choice between access and privacy. Today's computers are capable of handling a verbal interface without requiring a cloud service to handle all of your requests.
+
+Aaron Chantrill is one of the developers on the Naomi Project, a free and open source voice assistant (https://projectnaomi.com). It is a plugin based system based on Jasper (http://jasperproject.github.io/), and depending on how the user chooses to configure it, can run totally offline.
+
+In this presentation, Aaron would like to introduce people to the Naomi Project, talk about the benefits of a verbal interface, talk about the current architectures of virtual assistants, and ways in which that architecture can be altered to provide better privacy, and also do a comparison of offline speech to text and text to speech solutions, including Pocketsphinx, Mozilla Deepspeech, Kaldi, and Julius. Finally, He will invite people to participate in building and improving Naomi. There is a lot to do and much of it is both engaging and cutting-edge.
+
+Aaron recorded a video of his presentation that you can watch:
+https://youtu.be/8383A_t7iKQ
+
+The slides are available as well:
+https://github.com/aaronchantrill/NaomiPresentation/raw/master/Presentation.odp
+
+Due to COVID-19, we will meet virtually for a Question & Answer session via Google Hangouts:
+https://hangouts.google.com/hangouts/_/calendar/ZHJhc2t5QGdtYWlsLmNvbQ.3j6lkajlu4hovgjs0723eta607?hs=121
+
+Comments
+
+Peter R.~
+
+The post on the NZOSS website, which I mentioned during our meeting:
+"Covid-19 response - help for those working from home"
+https://nzoss.nz/covid-19-response-help-those-working-home
+
+===
+
+2020-04-20
+
+Gentoo and Arch
+
+Details
+
+Debian or Debian-based systems like Ubuntu and Linux Mint seem to be everywhere nowadays. However, there are other distros around, also with active communities.
+
+Jake Pouw-Waas will give a short introduction to Gentoo: Portage software management, the heart of Gentoo. In his talk, he will cover actions like searching and installing packages, updating and patching, as well as how to use other package sources and create your own ones.
+
+Angus will give a similar overview of Arch Linux, discussing how a rolling release distribution works, the Pacman package manager and the Arch User Repository.
+
+Comments
+
+Peter R.~
+
+Due to COVID-19, we are suspending all physical meetings for the time being.
+
+Peter R.~
+
+Last night's virtual meeting (via Google Hangouts) with the Naomi developer Aaron Chantrill went really well. Since screen sharing is possible as well with Hangouts, how about resurrecting the Gentoo/Arch meetup virtually? Would the speakers be up to that?
+
+===
+
+2020-05-25
+
+Ubuntu 20.04 and Manjaro
+
+Details
+
+Let's have a look at some non-Windows distributions:
+
+    Ian Stewart: Ubuntu 20.04
+    Rod Aldridge/Peter Reutemann: Manjaro
+
+We will be using the BigBlueButton instance, kindly made available by the NZ Open-Source Society, for this "virtual" meeting (max. 45 attendees). You can join the meeting at the following URL (please use your full name, as attendance will require moderator approval):
+https://bbb.nzoss.nz/b/pet-twz-w69
+
+In order to avoid interruptions, the actual presentations will start at 7:45pm. This will give us 15min to log in and configure our audio/video settings properly (and have a bit of a chat as well).
+
+Comments
+
+===
+
+2020-06-22
+
+GhostBSD and EndeavourOS Distros
+
+Details
+
+Continuing with last month's Linux distribution showdown, we are having a look at these:
+
+Tom Butz will show off GhostBSD, a BSD with a graphical user interface
+    
+Peter Reutemann will give his account on converting his laptop to Arch (through EndeavourOS)
+
+We will be using the BigBlueButton instance, kindly made available by the NZ Open-Source Society, for this "virtual" meeting (max. 45 attendees). You can join the meeting at the following URL (please use your full name, as attendance will require moderator approval):
+https://bbb.nzoss.nz/b/pet-twz-w69
+
+In order to avoid interruptions, the actual presentations will start at 7:45pm. This will give us 15min to log in and configure our audio/video settings properly (and have a bit of a chat as well).
+
+Comments
+
+Peter R.~
+
+Tom's videos and my slides are now available online: https://github.com/WLUG/meetings/tree/master/2020/2020-06-22
+
+Peter R.~
+
+Ian just added his material as well.
+
+===
+
+2020-07-27
+
+Docker and DRM with TVNZ
+
+Details
+
+Peter Reutemann will give an intro to Docker (https://www.docker.com/) and how he uses it to containerize deep learning frameworks.
+
+Tom Butz will briefly talk about his experience of DRM with TVNZ.
+
+Comments
+
+Peter R.~
+
+My presentation is now available from here: https://github.com/WLUG/meetings/tree/master/2020/2020-07-27
+
+===
+
+2020-08-24
+
+WireGuard VPN
+
+Details
+
+With VPNs being in the news frequently (and often for sad reasons like selling logs despite assurances that no such logs would exist), let's have a hands-on session with WireGuard (https://www.wireguard.com/), a VPN tunnel that is easier to use and configure than IPSec and faster than OpenVPN.
+
+Comments
+
+===
+
+2020-09-28
+
+BASH Programming
+
+Details
+
+Together, let's delve a bit into bash programming and command-line utilities that you can use in your scripts.
+
+Comments
+
+===
+
+2020-10-19
+
+Blockchain in XML and Ubuntu online upgrade
+
+Details
+
+Jake Waas will present a straightforward blockchain consisting of XML,
+conveniently viewable with a web browser. The miner / archival node is
+implemented in steel bank common lisp. Several important TODOs include the having of more than one node, defining a smart contract XML and using GPG signing. We can see the basic structure of a blockchain, and consider how and why they are useful. Hopefully he can learn something to add to his blockchain too!
+
+Ian Stewart will talk about his experience of performing an online upgrade of Ubuntu 18.04.5 to 20.04.1.
+
+Comments
+
+Ian S.~
+
+FYI: I have posted the Ubuntu upgrade presentation in the WLUG github repository...
+https://github.com/WLUG/meetings/tree/master/2020/2020-10-19
+cheers, Ian.
+
+===
+
+2020-11-23
+
+LISP Programming Language
+
+Details
+
+Introduction to the LISP programming language will be presented by Jake Waas and Ian Stewart. They will focus on the open source CLISP and SBCL dialects of the LISP language and the use of functions in the COMMON-LISP package. By the end of the presentation you will be able to write simple LISP programs.
+
+Comments
+
+Ian S.~
+
+The LISP slide presentation and code demonstration files have been uploaded to:
+https://github.com/WLUG/meetings/tree/master/2020/2020-11-23
+cheers, Ian.
+
+===
+
+2021-01-25
+
+AGM 2020 and Guest Account Cleaner
+
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda (preliminary)
+* President's Report
+* Treasurer's Report
+* Election of 2021 Committee
+* General business
+* Consumption of pizza
+
+After the AGM, Ian Stewart will talk about his guest-account-cleaner tool: https://github.com/irsbugs/guest-account-cleaner
+
+Comments
+
+Peter R.~
+
+The meeting minutes are now available:
+http://wiki.wlug.org.nz/MeetingTopics.2021-01-25
+
+===
+
+2021-02-22
+
+Xen based Hypervisors
+
+Details
+
+Roger Hardy and Lawrence D'Oliveiro will talk about experiences of a small business with locally hosted server virtualisation using open source Xen based hypervisors.
+
+Comments
+
+Rod A.~
+
+Very informative on how the open source Xen system works.
+
+===
+
+2021-03-22
+
+Processing Video and Audio
+
+Details
+
+The Linux universe has a diverse set of applications for processing video and audio, using the command-line or a graphical user interface. Let's explore some of them.
+
+Lawrence D'Oliveiro will demo the swiss-army knife ffmpeg and its associated tools.
+
+Ian Stewart will show the MPV command-line video player, which is the basis for Celluloid (it replaced VLC in Ubuntu 20.04).
+
+Peter Reutemann will introduce briefly OBS (Open Broadcaster Studio), OpenShot, PiTiVi, Handbrake, WinFF and Audacity.
+
+Comments
+
+Jake.~
+
+I can't make it.
+
+===
+
+2021-04-19
+
+Home Automation
+
+Details
+
+Home automation (aka smart home) is now widely available through a range of consumer products. But often, these devices are only accessible through closed-source apps and also tend to "phone home". Let's have a look, together with Peter Reutemann, at Home Assistant (https://www.home-assistant.io/), an open-source home automation framework that puts local control and privacy first.
+
+Comments
+
+Peter R.~
+
+My slides are now online at https://github.com/WLUG/meetings/tree/master/2021/2021-04-19
+
+===
+
+2021-05-24
+
+Flavours of Linux
+
+Details
+
+Ever been curious about Linux but never got around to giving it a go? Well, then you are in luck! In this meeting, we will help novices with having a test drive of Linux. Our members will bring different flavors of Linux along for you to try out. All you need is your laptop and a USB stick (4GB+) on which we can transfer a Linux image, from which you can then start a live Linux system.
+
+Alternatively, you can also use VirtualBox.org (or similar virtualization software) to spin up a virtual machine with a particular Linux flavor on your laptop. And we can help you getting acquainted with it as well.
+
+Comments
+
+===
+
+2021-06-28
+
+Introduction to Git
+
+Details
+
+New to the version control system git or wanting to share some handy tricks? Lawrence D'Oliveiro will give an introduction to the git command-line and how to manage files with it. After the intro, we will look into how to use github (e.g., forks, pull requests) and github alternatives.
+
+Unfortunately, Lawrence can't make it tonight. So it will be a bit more ad-hoc than planned.
+
+Comments
+
+===
+
+2021-07-26
+
+Nextcloud
+
+Details
+
+Looking for a replacement of Dropbox or Google Drive that respects your privacy? Then come to our meeting, as Glenn will show you how to install, run and use the open-source solution Nextcloud (https://nextcloud.com/) on a Raspberry Pi and check out the various clients that you can use with it.
+
+Comments
+
+===
+
+2021-08-23
+
+Embedded BASIC scripts in LibreOffice
+
+Details
+
+Ian Stewart will demo how to use embedded BASIC scripts in LibreOffice/OpenOffice for manipulating the Writer, Draw and Calc applications, like the amortization of a loan.
+
+Comments
+
+Peter R.~
+
+We will be monitoring the situation, whether we will be able to meet in person or go virtual via BigBlueButton.
+
+Peter R.~
+
+With the lockdown extended till at least Tuesday, we will have a virtual one instead.
+Now's your chance to list your topic of choice. :-)
+Stay safe everyone!
+
+Hippie H.~
+
+ii.nz is doing some fun stuff, and doing a weekly meetup in Tauranga.
+
+Some of which is CloudNative.NZ related, but more broadly Open Source / Open Society style inclusion of non-technically focused folks.
+
+Might be fun to chat about that some! Also keen to see BigBlueButton in use!
+
+Peter R.~
+
+The recording of the meeting is now online (apologies, I forgot to start the recording initially, so we missed the history bit): https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=6edc548c22debac4fb66721972cc80a03ddb3f87-1589785235926
+
+Peter R.~
+
+Bummer, that was the wrong one. Here's the correct one: https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=b9e64e4bd74566f13a48d6a5940f3c929982b914-1629703025339
+
+Peter R.~
+
+Ian just uploaded his presentation and documents onto our github account: https://github.com/WLUG/meetings/tree/master/2021/2021-08-23
+
+===
+
+2021-09-27
+
+Syncthing
+
+Details
+
+Peter Reutemann will demo Syncthing (https://syncthing.net/), a continuous file synchronization program. It synchronizes files between two or more computers in real time, respecting your privacy. Runs on Linux, Windows, Mac and Android among other platforms.
+
+Comments
+
+Peter R.~
+
+Since only Ian showed up tonight, we decided to move the presentation to next month. Hoping for level 1 and/or more attendees. :-)
+
+===
+
+2021-10-18
+
+Syncthing
+
+Details
+
+Peter Reutemann will demo Syncthing (https://syncthing.net/), a continuous file synchronization program. It synchronizes files between two or more computers in real time, respecting your privacy. Runs on Linux, Windows, Mac and Android among other platforms.
+
+Comments
+
+Rod A.~
+
+I can't get the sound on my laptop to work, so I will have to give it a miss.
+
+Peter R.~
+
+That's a shame... If you can connect your smartphone to your wifi, then you could log in a second time and use if for audio only.
+
+===
+
+2021-11-22
+
+Utuntu 21.10 and Fast Reverse Proxy
+
+Details
+
+For the last meeting of the year, let's have general get-together. Ian Stewart will demo the latest Ubuntu 21.10 and Peter Reutemann will try to show what you can use the frp fast reverse proxy for (https://github.com/fatedier/frp). And of course, general Linux related troubleshooting and questions answered.
+
+Comments
+
+Peter R.~
+
+The recording is now available: https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=b9e64e4bd74566f13a48d6a5940f3c929982b914-1637562041111
+
+Peter R.~
+
+And my notes on frp as well: https://github.com/WLUG/meetings/tree/master/2021/2021-11-22
+
+===
+
+2022-01-24
+
+AGM 2021
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda
+* President's Report
+* Treasurer's Report
+* Election of 2022 Committee
+* General business
+* Consumption of pizza (if not online)
+
+Comments
+
+===
+
+2022-02-28
+
+openbalena and OpenWrt
+
+Details
+
+Peter Reutemann will demo openbalena (https://www.balena.io/open/) and how it can be used for managing an IoT fleet of devices.
+
+Ian Stewart will present his modem running the latest version of OpenWrt ( https://openwrt.org/ ). Using ssh into his modem and what the web-based user interface looks like, we will see some of the improvements that have gone into this latest release.
+
+Comments
+
+Peter R.~
+
+Slides from our meeting: https://github.com/WLUG/meetings/tree/master/2022/2022-02-28
+
+===
+
+2022-03-28
+
+Pipewire
+
+Details
+
+Angus will introduce and demo Pipewire, a server for handling audio and video streams on Linux. It handles multimedia routing, screen sharing and pipeline processing. It addresses PulseAudio problems like high CPU load, bluetooth connection issues and can also handle low-latency JACK applications, unifying desktop and professional audio.
+
+Comments
+
+Peter R.~
+
+Angus' presentation is now available from github: https://github.com/WLUG/meetings/tree/master/2022/2022-03-28
+
+===
+
+2022-04-26
+
+Cyber Security
+
+Details
+
+With increasing cyber security threats, it is high time that we look at how you can bolster the security of your Linux system and how you connect to the outside world. For this purpose, we will have short show and tells lined up (let Peter know if you would like to demo/present as well):
+
+Roger will demo the pfSense firewall and router system based on FreeBSD, complete with a web-based user interface.
+A far simpler firewall, ufw (uncomplicated firewall), will be introduced by Peter (command-line and GUI).
+Angus will demo Wireguard, the VPN solutation that made it into the Linux kernel (starting with 5.6).
+
+Comments
+
+Peter R.~
+
+Roger posted more information on the small form factor PCs from last night's talk: https://list.waikato.ac.nz/hyperkitty/list/wlug@list.waikato.ac.nz/message/N4LFZOY55BICPY3SPKBJB55ZNXC6DLOM/
+
+===
+
+2022-05-23
+
+Cyber Security - (Continued)
+
+Details
+
+Since we ran out of time at our last meeting, we are continuing our theme on cyber security with more show and tells (let Peter know if you would like to demo/present as well):
+
+A far simpler firewall than pfSense, ufw (uncomplicated firewall), will be introduced by Peter (command-line and GUI). He will also briefly talk about tools like ClamAV (anti-virus), nmap (port scanner) and rkhunter (root kit detection).
+Angus will demo Wireguard, the VPN solution that made it into the Linux kernel (starting with 5.6).
+
+Comments
+
+===
+
+2022-06-27
+
+Installing Linux Mint 20 and Ubuntu 22.04
+
+Details
+
+Tom Butz will talk about his experience of installing Linux Mint 20 on his laptop and Ian Stewart of getting Ubuntu 22.04 dual-booting Linux/Windows on a UEFI-enabled device.
+
+Comments
+
+Ian S.~
+
+The presentation slides from last nights meeting have been posted at: https://github.com/WLUG/meetings/tree/master/2022/2022-06-27
+
+cheers, Ian.
+
+Peter R.~
+
+Last night's recording is now available: https://www.youtube.com/watch?v=AsTfFRqUKeg
+
+===
+
+2022-07-25
+
+Desktop Environments
+
+Details
+
+Open source software is always about choice. Whereas Windows users can't really do much about the desktop experience that gets dictated by Microsoft, Linux users can choose from a wide variety of desktop environments. Tonight, we will explore a range of these: MATE, Cinnamon, Gnome, KDE, LXDE, XFCE and maybe more.
+
+If your favorite environment is not listed, then please join in and demo it!
+
+Comments
+
+Peter R.~
+
+You can watch the recording now on youtube: https://www.youtube.com/watch?v=p157XJFQlBQ
+
+===
+
+2022-08-22
+
+Command Line Tools
+
+Details
+
+Command-line tools under Linux are the bread and butter of sysadmins, but any user can benefit from a wide variety of hidden gems. In this meetup, we will explore essential command-line tools that one should be aware of. Please join us if you would to like learn about them or even demo your personal set of useful tools!
+
+Comments
+
+Peter R.~
+
+The recording is now online as well: https://www.youtube.com/watch?v=rd4sCvxhop8
+
+Ian S.~
+
+My presentation and python files are now on-line: https://github.com/WLUG/meetings/tree/master/2022/2022-08-22/ian
+
+Ian S.~
+
+All my files have now been updated with code that makes better use of the Python subprocess module. See https://github.com/WLUG/meetings/tree/master/2022/2022-08-22/ian
+
+===
+
+2022-09-27
+
+Google's speech-to-text
+
+Details
+
+People that never learned to touch type find that typing can severely impede creativity. Rod Aldridge will talk about his experience of getting Google's speech-to-text working on his computer to speed up his writing, what to look out for, how it works and how well it works.
+
+Comments
+
+Peter R.~
+
+Video from last night has just been uploaded: https://www.youtube.com/watch?v=shD9vvYy1PQ
+
+===
+
+2022-10-25
+
+Docker
+
+Details
+
+Ever wondered what Docker was all about? Peter Reutemann will give a hands-on introduction into the tool and show you why it is so useful.
+
+Comments
+
+Peter R.~
+
+Since it came up in the discussion after the meeting... It is possible to get CUDA going on WLS2 under Windows (disclaimer: I don't use Windows, so not tested): https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl
+
+Peter R.~
+
+My notes and link to youtube video are now available at: https://github.com/WLUG/meetings/tree/master/2022/2022-10-25
+
+===
+
+2022-11-28
+
+Window Managers for Linux
+
+Details
+
+Gnome, MATE, Cinnamon and KDE are the most common window managers for Linux desktops. But what about the lesser known ones? There are plenty of compositing, stacking or tiling window managers out there. Let's have a look at some (https://en.wikipedia.org/wiki/Comparison_of_X_window_managers). Maybe you'll find the one that you have been looking for all those years?
+
+Comments
+
+===
+
+2023-01-23
+
+AGM 2022
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda
+* President's Report
+* Treasurer's Report
+* Election of 2023 Committee
+* Retirement of WLUG servers
+* General business
+* Consumption of pizza (if not online)
+
+Please note, only paid-up members of the society will be able to vote.
+
+Comments
+
+Peter R.~
+
+BTW After nearly 10 years I won't be standing for president (or any other office) anymore. Due to personal reasons, I can no longer give the president's office the required attention (like organizing meetings, finding speakers/topics, presenting, etc).
+This presents a great opportunity for someone new to step up and bring in a fresh perspective to the society!
+
+===
+
+2023-02-27
+
+AGM 2022 (2nd attempt)
+
+Details
+
+The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
+
+Agenda
+* President's Report
+* Treasurer's Report
+* Election of 2023 Committee
+* Retirement of WLUG servers
+* General business
+
+If the offices cannot be filled, we will initiate the dissolution of the society. For details see minutes from previous AGM attempt.
+
+Please note, only paid-up members of the society will be able to vote.
+
+Comments
+
+
