@@ -12,13 +12,13 @@ Meeting topics
 
 * a bit different: ReactOS (http://distrowatch.com/table.php?distribution=reactos), FreeDOS (http://www.freedos.org/)
 
-## 2017-02-27 Browsers for Linux and Linux Conference
+## [2017-02-27](2017-02-27) Browsers for Linux and Linux Conference
 
 With Firefox (http://www.theverge.com/2017/1/25/14376710/walt-mossberg-mozilla-firefox-browser-revived) losing ground against Chrome and sliding lower and lower in the browser rankings, how about we have a good look at the browsers available for Linux and benchmark them?
 
 Michael Cree has been to linux.conf.au (https://linux.conf.au/) recently and will talk a bit about his experience.
 
-## 2017-03-27 A/V Setup and Raspberry Pi
+## [2017-03-27](2017-03-27) A/V Setup and Raspberry Pi
 
 William Mckee has been to nz.js.con recently and will talk about the A/V setup used for recording the presentations: hdmi2usb (https://hdmi2usb.tv/home/)
 
@@ -38,33 +38,33 @@ With Canonical killing off its desktop environment Unity in favor of GNOME (http
 
 * Ian Young: Getting a DVB-T card for laptops going - a live experiment.
 
-## 2017-05-22 FLOSS
+## [2017-05-22](2017-05-22) FLOSS
 
 FLOSS options for security-related purposes and communications - backups, cloud services, password managers, network streaming services. Particularly ones where a proprietary one is dominant e.g., Skype, Facebook, iTunes. What is your favorite alternative? Let's discuss the available options, strengths and weaknesses.
 
-## 2017-06-26 System D-Bus and Debian 9
+## [2017-06-26](2017-06-26) System D-Bus and Debian 9
 
 Ian Stewart will show how to use the System D-Bus on a Raspberry Pi 3 to receive digital pulses from the Pi's GPIO ports.
 
 Debian 9 (http://www.debian.org/) aka Stretch has been released, let's give it a spin!
 
-## 2017-07-24 Command line Tools and Fedora 26
+## [2017-07-24](2017-07-24) Command line Tools and Fedora 26
 
 Lawrence D'Oliveiro and Peter Reutemann will demo some command-line tools like cat/tac/zcat, less, column, grep, find, xargs, sort, sed, etc.
 
 Ian Young will test-drive the recently released Fedora 26 (https://getfedora.org/).
 
-## 2017-08-28 Time and Weather Station
+## [2017-08-28](2017-08-28) Time and Weather Station
 
 The nightmare of dealing with time and clocks on computers. Ian Stewart will give a presentation on the seemingly simple concept of time and its messy implementations.
 
 Peter Reutemann will briefly introduce some cool projects for your home if you have a Raspberry Pi: Weather Station (https://www.raspberryweather.com/), Hacking your heatpump (https://nicegear.co.nz/blog/hacking-a-mitsubishi-heat-pump-air-conditioner/).
 
-## 2017-09-25 Linux Security Tools amd NixOS
+## [2017-09-25](2017-09-25) Linux Security Tools amd NixOS
 
 Peter Reutemann will give a quick rundown of some Linux security tools (ClamAV, Sophos scanner, Chkrootkit, Rkhunter, Lynis), introduce the cross-platform prototyping/drawing tool Pencil (http://pencil.evolus.vn/) and demo the Linux distro NixOS (https://nixos.org/).
 
-## 2017-10-23 Ubuntu 17.10, Ubuntu upgrading and Q4OS
+## [2017-10-23](2017-10-23) Ubuntu 17.10, Ubuntu upgrading and Q4OS
 
 Peter Reutemann will give the new Ubuntu 17.10 (https://www.ubuntu.com/desktop/1710) a spin. It now comes with the GNOME shell instead of Unity...
 
