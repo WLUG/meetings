@@ -48,7 +48,7 @@ William McKee is demoing the Godot Game Engine (http://www.godotengine.org/wp/),
 
 Ian Young will give a quick run-down of the Manjaro (http://manjaro.org/) distribution.
 
-## 2014-07-28 Yubikey
+## [2014-07-28](2014-07-28) Yubikey
 
 The Yubikey is one time password generator that conveniently connects a USB keyboard to your PC. It is port powered and small enough to kept on your keyring [1].
 
@@ -60,7 +60,7 @@ The presenter will talk about lastpass.com and apache authentication.
 
 [1] https://www.yubico.com/products/yubikey-hardware/yubikey/
 
-## 2014-08-25 Blender
+## [2014-08-25](2014-08-25) Blender
 
 3D animations (or CGI) are everywhere nowadays. You don't need deep pockets for purchasing good software, the FLOSS world has its own package for creating first-class animations: Blender (http://www.blender.org/).
 
@@ -72,7 +72,7 @@ Virtualization has been become commonplace nowadays, with lots of different impl
 
 Andrew Parnasov will give an introduction to Docker, how to set it up, how to use and what it can be used for.
 
-## 2014-10-20 Crypto2.0 and OwnCloud
+## [2014-10-20](2014-10-20) Crypto2.0 and OwnCloud
 
 Greg B.: A talk with an overview of the so-called "Crypto2.0" open source projects that are attempting to be overlays for the bitcoin network. Why does bitcoin need overlays and possible future directions in cryptofinance in general? A brief round-up of the emerging Crypto2.0 projects out there, Counterparty, Mastercoin, Bitshares, Ripple, Stellar, Next and CoinSpark. Then a more in-depth discussion of Open-Transactions (openTXS).
 
