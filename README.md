@@ -47,80 +47,80 @@ Below is a summary of the Meeting dates and the meeting topic.
 
 ## 2017
 * 2017-01-23  **SGM and Distro Roundup**
-* 2017-02-27  **Browsers for Linux and Linux Conference**
-* 2017-03-27  **A/V Setup and Raspberry Pi**
+* [2017-02-27](2017/2017-02-27)  **Browsers for Linux and Linux Conference**
+* [2017-03-27](2017/2017-03-27)  **A/V Setup and Raspberry Pi**
 * 2017-04-24  **Desktop Environments**
-* 2017-05-22  **FLOSS**
-* 2017-06-26  **System D-Bus and Debian 9**
-* 2017-07-24  **Command line Tools and Fedora 26**
-* 2017-08-28  **Time and Weather Station**
-* 2017-09-25  **Linux Security Tools amd NixOS**
-* 2017-10-23  **Ubuntu 17.10, Ubuntu upgrading and Q4OS**
+* [2017-05-22](2017/2017-05-22)  **FLOSS**
+* [2017-06-26](2017/2017-06-26)  **System D-Bus and Debian 9**
+* [2017-07-24](2017/2017-07-24)  **Command line Tools and Fedora 26**
+* [2017-08-28](2017/2017-08-28)  **Time and Weather Station**
+* [2017-09-25](2017/2017-09-25)  **Linux Security Tools amd NixOS**
+* [2017-10-23](2017/2017-10-23)  **Ubuntu 17.10, Ubuntu upgrading and Q4OS**
 * 2017-11-27  **AGM 2017**
 
 ## 2018
 * 2018-01-22  **Meltdown and Spectre**
-* 2018-02-26  **Manjaro**
+* [2018-02-26](2018/2018-03-26)  **Manjaro**
 * 2018-03-26  **Rsync**
 * 2018-04-23  **Cambridge Analytics**
 * 2018-05-28  **DiLer and Pop!_OS**
 * 2018-06-25  **Mail Server iRedMail**
 * 2018-07-23  **Raspberry Pi**
 * 2018-08-27  **Alexa**
-* 2018-09-24  **Ecryptfs, SparkyLinux, and Matrix**
+* [2018-09-24](2018/2018-09-24)  **Ecryptfs, SparkyLinux, and Matrix**
 * 2018-10-22  **Free Open Source Software**
-* 2018-11-26  **AGM 2018**
+* [2018-11-26](2018/2018-11-26)  **AGM 2018**
 
 ## 2019
-* 2019-01-21  **2D Animations**
-* 2019-02-25  **OpenWrt**
-* 2019-03-25  **Termux - Android terminal emulator**
+* [2019-01-21](2019/2019-01-21)  **2D Animations**
+* [2019-02-25](2019/2019-02-25)  **OpenWrt**
+* [2019-03-25](2019/2019-03-25)  **Termux - Android terminal emulator**
 * 2019-04-15  **antiX Linux**
-* 2019-05-20  **Nagios**
-* 2019-06-24  **Tools to generate .deb packages**
+* [2019-05-20](2019/2019-05-20)  **Nagios**
+* [2019-06-24](2019/2019-06-24)  **Tools to generate .deb packages**
 * 2019-07-22  **GalliumOS**
 * 2019-08-26  **Falcon**
 * 2019-09-23  **Greylisting on a VPS**
-* 2019-10-21  **Print Server using Raspberry Pi**
+* [2019-10-21](2019/2019-10-21)  **Print Server using Raspberry Pi**
 * 2019-11-25  **AGM 2019**
 
 ## 2020
-* 2020-01-20  **LineageOS**
+* [2020-01-20](2020/2020-01-20)  **LineageOS**
 * 2020-02-24  **Pinebook Pro**
 * 2020-03-23  **Naomi Project**
 * 2020-04-20  **Gentoo and Arch**
-* 2020-05-25  **Ubuntu 20.04 and Manjaro**
-* 2020-06-22  **GhostBSD and EndeavourOS Distros**
-* 2020-07-27  **Docker and DRM with TVNZ**
+* [2020-05-25](2020/2020-05-25)  **Ubuntu 20.04 and Manjaro**
+* [2020-06-22](2020/2020-06-22)  **GhostBSD and EndeavourOS Distros**
+* [2020-07-27](2020/2020-07-27)  **Docker and DRM with TVNZ**
 * 2020-08-24  **WireGuard VPN**
 * 2020-09-28  **BASH Programming**
-* 2020-10-19  **Blockchain in XML and Ubuntu online upgrade**
-* 2020-11-23  **LISP Programming Language**
+* [2020-10-19](2020/2020-10-19)  **Blockchain in XML and Ubuntu online upgrade**
+* [2020-11-23](2020/2020-11-23)  **LISP Programming Language**
 
 ## 2021
 * 2021-01-25  **AGM 2020 and Guest Account Cleaner**
 * 2021-02-22  **Xen based Hypervisors**
-* 2021-03-22  **Processing Video and Audio**
-* 2021-04-19  **Home Automation**
-* 2021-05-24  **Flavours of Linux**
+* [2021-03-22](2021/2021-03-22)  **Processing Video and Audio**
+* [2021-04-19](2021/2021-04-19)  **Home Automation**
+* [2021-05-24](2021/2021-05-24)  **Flavours of Linux**
 * 2021-06-28  **Introduction to Git**
 * 2021-07-26  **Nextcloud**
-* 2021-08-23  **Embedded BASIC scripts in LibreOffice**
+* [2021-08-23](2021/2021-08-23)  **Embedded BASIC scripts in LibreOffice**
 * 2021-09-27  **Syncthing**
-* 2021-10-18  **Syncthing**
-* 2021-11-22  **Utuntu 21.10 and Fast Reverse Proxy**
+* [2021-10-18](2021/2021-10-18)  **Syncthing**
+* [2021-11-22](2021/2021-11-22)  **Utuntu 21.10 and Fast Reverse Proxy**
 
 ## 2022
-* 2022-01-24  **AGM 2021**
-* 2022-02-28  **openbalena and OpenWrt**
-* 2022-03-28  **Pipewire**
-* 2022-04-26  **Cyber Security**
-* 2022-05-23  **Cyber Security - (Continued)**
-* 2022-06-27  **Installing Linux Mint 20 and Ubuntu 22.04**
+* [2022-01-24](2022/2022-01-24)  **AGM 2021**
+* [2022-02-28](2022/2022-02-28)  **openbalena and OpenWrt**
+* [2022-03-28](2022/2022-03-28)  **Pipewire**
+* [2022-04-26](2022/2022-04-26)  **Cyber Security**
+* [2022-05-23](2022/2022-05-23)  **Cyber Security - (Continued)**
+* [2022-06-27](2022/2022-06-27)  **Installing Linux Mint 20 and Ubuntu 22.04**
 * 2022-07-25  **Desktop Environments**
-* 2022-08-22  **Command Line Tools**
-* 2022-09-27  **Google's speech-to-text**
-* 2022-10-25  **Docker**
+* [2022-08-22](2022/2022-08-22)  **Command Line Tools**
+* [2022-09-27](2022/2022-09-27)  **Google's speech-to-text**
+* [2022-10-25](2022/2022-10-25)  **Docker**
 * 2022-11-28  **Window Managers for Linux**
 
 ## 2023
