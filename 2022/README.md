@@ -5,11 +5,11 @@
 The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
 
 Agenda
-• President's Report
-• Treasurer's Report
-• Election of 2022 Committee
-• General business
-• Consumption of pizza (if not online)
+* President's Report
+* Treasurer's Report
+* Election of 2022 Committee
+* General business
+* Consumption of pizza (if not online)
 
 ## 2022-02-28 openbalena and OpenWrt
 
