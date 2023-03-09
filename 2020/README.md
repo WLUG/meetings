@@ -39,8 +39,8 @@ Angus will give a similar overview of Arch Linux, discussing how a rolling relea
 
 Let's have a look at some non-Windows distributions:
 
-    Ian Stewart: Ubuntu 20.04
-    Rod Aldridge/Peter Reutemann: Manjaro
+* Ian Stewart: Ubuntu 20.04
+* Rod Aldridge/Peter Reutemann: Manjaro
 
 We will be using the BigBlueButton instance, kindly made available by the NZ Open-Source Society, for this "virtual" meeting (max. 45 attendees). You can join the meeting at the following URL (please use your full name, as attendance will require moderator approval):
 https://bbb.nzoss.nz/b/pet-twz-w69
