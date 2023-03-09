@@ -12,7 +12,7 @@ Ian Young will be demoing Manjaro (https://manjaro.org/), a Linux distribution t
 
 General discussion on backup tools and strategies: What tool do you use? What approach is working for you? What should you stay away from at all costs?
 
-## 2018-03-26 Rsync
+## [2018-03-26](2018-03-26) Rsync
 
 Due to the lively discussion around backup at last month's meeting, we decided to delve a bit deeper into backups using rsync (https://rsync.samba.org/).
 
@@ -56,7 +56,7 @@ Brendon Ranum, owner of a voice driven highly automated accommodation business i
 
 Brendon will bring along his collection of every Amazon Echo ever made (10 models), and talk about adding voice control in front of home automation, the pitfalls, and how a spare Raspberry Pi can be used to solve some of them. He will also demo creating and using Echo Skills, compare differences in features of the Echo's in different countries, and share how guests attitudes have changed over the last year using Alexa.
 
-## 2018-09-24 Ecryptfs, SparkyLinux, and Matrix
+## [2018-09-24](2018-09-24) Ecryptfs, SparkyLinux, and Matrix
 
 Ian Stewart will present on the ecryptfs.org "home folder encryption" that has been a feature of ubuntu for many years.
 
@@ -75,7 +75,7 @@ General discussion on patents, FOSS and the implications of Microsoft's latest a
 
 Potentially a quick demo of the just released Ubuntu 18.10.
 
-## 2018-11-26 AGM 2018
+## [2018-11-26](2018-11-26) AGM 2018
 
 The Annual General Meeting (AGM) of the Waikato Linux Users Group Society.
 
