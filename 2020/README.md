@@ -1,6 +1,6 @@
 # Meetings for 2020
 
-## 2020-01-20 LineageOS
+## [2020-01-20](2020-01-20) LineageOS
 
 Is your Android phone no longer supported by your manufacturer? Then you might able to update it using a custom ROM from LineageOS (https://wiki.lineageos.org/devices/) or AospExtended ROM (https://www.aospextended.com/devices/pie). Peter Reutemann will show the process of updating the ROM on an Android phone.
 
@@ -35,7 +35,7 @@ Jake Pouw-Waas will give a short introduction to Gentoo: Portage software manage
 
 Angus will give a similar overview of Arch Linux, discussing how a rolling release distribution works, the Pacman package manager and the Arch User Repository.
 
-## 2020-05-25 Ubuntu 20.04 and Manjaro
+## [2020-05-25](2020-05-25) Ubuntu 20.04 and Manjaro
 
 Let's have a look at some non-Windows distributions:
 
@@ -47,7 +47,7 @@ https://bbb.nzoss.nz/b/pet-twz-w69
 
 In order to avoid interruptions, the actual presentations will start at 7:45pm. This will give us 15min to log in and configure our audio/video settings properly (and have a bit of a chat as well).
 
-## 2020-06-22 GhostBSD and EndeavourOS Distros
+## [2020-06-22](2020-06-22) GhostBSD and EndeavourOS Distros
 
 Continuing with last month's Linux distribution showdown, we are having a look at these:
 
@@ -60,7 +60,7 @@ https://bbb.nzoss.nz/b/pet-twz-w69
 
 In order to avoid interruptions, the actual presentations will start at 7:45pm. This will give us 15min to log in and configure our audio/video settings properly (and have a bit of a chat as well).
 
-## 2020-07-27 Docker and DRM with TVNZ
+## [2020-07-27](2020-07-27) Docker and DRM with TVNZ
 
 Peter Reutemann will give an intro to Docker (https://www.docker.com/) and how he uses it to containerize deep learning frameworks.
 
@@ -74,7 +74,7 @@ With VPNs being in the news frequently (and often for sad reasons like selling l
 
 Together, let's delve a bit into bash programming and command-line utilities that you can use in your scripts.
 
-## 2020-10-19 Blockchain in XML and Ubuntu online upgrade
+## [2020-10-19](2020-10-19) Blockchain in XML and Ubuntu online upgrade
 
 Jake Waas will present a straightforward blockchain consisting of XML,
 conveniently viewable with a web browser. The miner / archival node is
@@ -82,6 +82,6 @@ implemented in steel bank common lisp. Several important TODOs include the havin
 
 Ian Stewart will talk about his experience of performing an online upgrade of Ubuntu 18.04.5 to 20.04.1.
 
-## 2020-11-23 LISP Programming Language
+## [2020-11-23](2020-11-23) LISP Programming Language
 
 Introduction to the LISP programming language will be presented by Jake Waas and Ian Stewart. They will focus on the open source CLISP and SBCL dialects of the LISP language and the use of functions in the COMMON-LISP package. By the end of the presentation you will be able to write simple LISP programs.
