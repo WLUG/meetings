@@ -3,9 +3,9 @@
 Stuff from meetings: slides, code, etc.
 See respective meeting sub-folders for specific details.
 
-Meetings were posted on Meetup.com. Each year has a extract of each meetings topic.
+Meetings were posted on Meetup.com. Each year has an extract of each meetings topic.
 
-Below is the Meeting dates and the heading of the meeting topic.
+Below is a summary of the Meeting dates and the meeting topic.
 
 ## 2014
 * 2014-01-20  **AGM 2013**
